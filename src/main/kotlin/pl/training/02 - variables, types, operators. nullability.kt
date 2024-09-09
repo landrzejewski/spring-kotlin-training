@@ -144,11 +144,11 @@ fun main() {
     }
 
     when (response) {
-        is String -> print(text.length + 1)
-        is Int -> print(text)
+        is String -> print(response.length + 1)
+        is Int -> print(response)
     }
 
-    val responseText = response as String // explicit casting
+    // val responseText = response as String // explicit casting
     // val responseText = response as? String
 
     /*
@@ -169,8 +169,8 @@ fun main() {
     }
 
     // val contact: Contact = null // compilation error, it's impossible to assign null to regular type
-    val contact: Contact? = null // declaration of nullable type (regular type name with a question mark)
-    // val contactName = contact.name // compilation error, name cannot be accessed without checking if contact is null or use of safe call
+     val contact: Contact? = null // declaration of nullable type (regular type name with a question mark)
+    //  val contactName = contact.name // compilation error, name cannot be accessed without checking if contact is null or use of safe call
     val nameLength = contact?.name?.length // safe call, nameLength type is Int?
     val length = nameLength ?: 0 // Elvis operator, length type is Int
 
