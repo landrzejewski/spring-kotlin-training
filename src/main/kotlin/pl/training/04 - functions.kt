@@ -68,14 +68,10 @@ fun compute3() {
     }
 }
 
-fun String.removeQuotes() = replace("\"", "")
-
 fun main() {
     sayHello()
     sayHello("Hi")
     sayHello(who = "John")
     println(asText(2))
     println(20 mod 3)
-    20.mod(3)
-    "Test".removeQuotes()
 }
