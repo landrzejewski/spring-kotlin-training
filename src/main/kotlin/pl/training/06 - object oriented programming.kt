@@ -1,16 +1,19 @@
 package pl.training
 
+import java.io.Serializable
+
 // Minimalistic class definition
 class Money
 
 open class Account /*constructor*/(private val number: String) { // primary constructor with one private, immutable argument/property definition
 
     var balance = 0.0 // property
+
     var owner: String = ""
         get() = field.uppercase() // custom getter, `field` is a reference to backing field, must always have the same visibility and result type as the property
         //      get() {
-//          return field.uppercase()
-//      }
+        //          return field.uppercase()
+        //      }
         set(value) {              // custom setter
             if (value.isNotBlank()) {
                 field = value
@@ -19,8 +22,9 @@ open class Account /*constructor*/(private val number: String) { // primary cons
 
     // If a property’s custom accessors do not use the field keyword, then the backing field will not be generated.
     val accountInfo: String
-        get() = number + owner
+        get() = number + owner + balance
 
+    // https://stackoverflow.com/a/60199782
     // default constructor body
     init {
         println("First init")
@@ -76,6 +80,11 @@ fun interface Printable { // functional/SAM interface
 
 fun generateReport(printable: Printable) {
     printable.print("summary")
+}
+
+class Document : Printable, Serializable {
+    override fun print(value: String) {
+    }
 }
 
 /*
@@ -187,7 +196,7 @@ annotation class Factory
     (we can have many extensions with the same name for the same type). Extensions are not virtual, meaning that
     they cannot be redefined in derived classes.
 */
-fun String.removeQuotes() = replace("\"", "")
+fun String.removeQuotes() = replace("\"", "").trim()
 // fun removeQuotes(text: String) = text.removeQuotes().trim()
 
 val <T> List<T>.lastIndex: Int
@@ -205,8 +214,8 @@ fun Report.Companion.printVersion() {
 }
 
 /*
-    Inline classe - a value class in Kotlin holds a single immutable value which can be inlined
-     on compilation removing the wrapper type and using the underlying value itself.
+    Inline classes - a value class in Kotlin holds a single immutable value which can be inlined
+    on compilation removing the wrapper type and using the underlying value itself.
     When we place the inline modifier before a function, its body will replace its usages (calls) during
     compilation.
 
@@ -219,13 +228,19 @@ fun Report.Companion.printVersion() {
     }
  */
 
-inline class Password(private val text: String)
+@JvmInline
+value class Username(private val text: String)
+@JvmInline
+value class Password(private val text: String)
+
+class Profile(val userName: Username, val password: Password)
 
 fun main() {
     val account = Account("123456")
     account.printBalance()
     account.balance = 100.0 // setter call, possible because of var declaration
     println(account.balance) // getter call
+    println(account.accountInfo)
 
     generateReport(object : Printable {  // object expression
         override fun print(value: String) {
