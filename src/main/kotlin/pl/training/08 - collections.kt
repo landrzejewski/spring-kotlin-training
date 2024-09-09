@@ -7,3 +7,9 @@ package pl.training
         Map - represents a set of key-value pairs
     Examples: https://kotlinlang.org/docs/collections-overview.html
 */
+
+fun main() {
+    val numbers = mutableSetOf(1, 2 ,3 )
+    numbers.add(6)
+
+}

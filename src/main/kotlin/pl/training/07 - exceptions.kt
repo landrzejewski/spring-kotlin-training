@@ -9,7 +9,7 @@ package pl.training
     Exception type represents exceptions we can recover from using a try-catch block.
  */
 
-class DivisionByZeroException : RuntimeException("Division by zero")
+class DivisionByZeroException : Exception("Division by zero")
 
 fun divide(value: Double, by: Double): Double {
     if (by == 0.0) {
