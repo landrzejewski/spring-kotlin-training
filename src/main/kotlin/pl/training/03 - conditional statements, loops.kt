@@ -44,7 +44,9 @@ fun main() {
         Inside the `when` parentheses, we can also define a variable, and its value will be accessible in each condition
     */
 
-    when (val response = 5) {
+    fun getValue()= 5
+
+    when (val response = getValue()) {
         is Number -> println(response)
         is String -> println(response.length)
     }
