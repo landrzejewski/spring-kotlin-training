@@ -6,7 +6,7 @@ import pl.training.payments.domain.Money
 
 interface Cards {
 
-    fun charge(cardNumber: CardNumber, amount: Money)
+    open fun charge(cardNumber: CardNumber, amount: Money)
     fun chargeFees(cardNumber: CardNumber)
     fun getTransactions(cardNumber: CardNumber): List<CardTransaction>
 
