@@ -19,19 +19,19 @@ interface Converter<S, T> {
 
 class DoubleToInt : Converter<Double, Int> {
 
-    override fun convert(source: Double): Int = source.toInt()
+    override fun convert(source: Double) = source.toInt()
 
 }
 
 class IntToDouble : Converter<Int, Double> {
 
-    override fun convert(source: Int): Double = source.toDouble()
+    override fun convert(source: Int) = source.toDouble()
 
 }
 
 class StringToBoolean : Converter<String, Boolean> {
 
-    override fun convert(source: String): Boolean = source.toBoolean()
+    override fun convert(source: String) = source.toBoolean()
 
 }
 
@@ -41,11 +41,12 @@ val converters = mapOf(
     "StringToBoolean" to StringToBoolean()
 )
 
+/*
 open class Vehicle
-open class Car : Vehicle()
+open class Car() : Vehicle()
 class RaceCar : Car()
 
-class Garage</*out*/ T : Vehicle> {
+class Garage<out T : Vehicle> {
 
     private val vehicles = mutableListOf<T>()
 
@@ -62,7 +63,9 @@ class Garage</*out*/ T : Vehicle> {
 fun drive(garage: Garage<Car>) {
     val vehicle = garage.getLast()
 }
+*/
 
+/*
 fun main() {
     Wrapper(2)
     Wrapper("Test")
@@ -87,7 +90,7 @@ fun main() {
     println(list is List<*>) // true
     // println(list is List<Int>) // Compilation error
 }
-
+*/
 /*
     Let’s say that Child is a subtype of Parent, and you have a generic Box class to
     enclose them both. The question is: what is the relation between the Box<Child>
@@ -102,7 +105,7 @@ fun main() {
  */
 
 /*
-class Box<T>
+class Box<T: Parent>
 open class Parent
 class Child : Parent()
 

@@ -1,6 +1,7 @@
 package pl.training
 
 import kotlin.properties.Delegates
+import kotlin.properties.Delegates.observable
 import kotlin.reflect.KProperty
 import kotlin.reflect.KProperty1
 
@@ -18,10 +19,14 @@ interface Base {
 }
 
 class BaseImpl(val x: Int) : Base {
-    override fun print() { print(x) }
+    override fun print() { println(x) }
 }
 
-class Derived(b: Base) : Base by b
+class Derived(b: Base) : Base by b {
+
+    override fun print() { println("Derived") }
+
+}
 
 /*
     Delegation pattern on properties level
@@ -37,14 +42,16 @@ val lazyValue: String by lazy {
 }
 
 class Counter {
-    var value: Int by Delegates.observable(0) { prop, oldValue, newValue ->
+    var value: Int by observable(0) { prop, oldValue, newValue ->
         println("$oldValue => $newValue")
     }
 }
 
-class Participant(val map: Map<String, Any?>) {
+class Participant(map: Map<String, Any?>) {
     val name: String by map
     val age: Int     by map
+
+    override fun toString() = "$name: $age"
 }
 
 class LoggerDelegate<T> {
@@ -61,6 +68,7 @@ class LoggerDelegate<T> {
         println("$owner.${property.name} write")
         this.value = value
     }
+
 }
 
 
@@ -87,6 +95,8 @@ fun main() {
         "name" to "John Doe",
         "age"  to 25
     ))
+
+    println(user)
 
     val person = Person()
     person.name = "Jan"
