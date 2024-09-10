@@ -6,7 +6,6 @@ import org.aspectj.lang.annotation.Aspect
 import org.springframework.core.Ordered
 import org.springframework.core.annotation.Order
 import org.springframework.stereotype.Component
-import pl.training.payments.utils.aop.Timer.TimeUnit
 import java.util.logging.Logger
 
 @Aspect
@@ -28,8 +27,8 @@ class TimerAspect : Ordered {
         return result
     }
 
-    private fun getTime(timeUnit: TimeUnit): Long {
-        return if (timeUnit == TimeUnit.NS) System.nanoTime() else System.currentTimeMillis()
+    private fun getTime(timeUnit: Timer.TimeUnit): Long {
+        return if (timeUnit == Timer.TimeUnit.NS) System.nanoTime() else System.currentTimeMillis()
     }
 
     override fun getOrder(): Int {

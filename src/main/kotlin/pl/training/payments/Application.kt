@@ -10,12 +10,11 @@ import pl.training.payments.domain.CardId
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.Money
 import pl.training.payments.domain.Money.Companion.DEFAULT_CURRENCY
-import pl.training.payments.infrastructure.input.CardsViewModel
 import java.math.BigDecimal
 import java.time.LocalDate
 
 @SpringBootApplication
-class PaymentsApplication(private val cardsRepository: CardsRepository, private val viewModel: CardsViewModel) :
+class PaymentsApplication(private val cardsRepository: CardsRepository) :
     ApplicationRunner {
 
     override fun run(args: ApplicationArguments?) {
@@ -24,14 +23,7 @@ class PaymentsApplication(private val cardsRepository: CardsRepository, private 
         val cardExpirationDate = LocalDate.now().plusYears(1)
         val cardBalance = Money(BigDecimal.valueOf(1_000), DEFAULT_CURRENCY)
         val card = Card(cardId, cardNumber, cardExpirationDate, cardBalance)
-
         cardsRepository.save(card)
-
-        viewModel.charge(100.50)
-        viewModel.chargeFees()
-
-        viewModel.getTransactions()
-            .forEach { println(it) }
     }
 
 }

@@ -1,6 +1,5 @@
 package pl.training.payments
 
-import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import pl.training.payments.application.CardsService
@@ -12,11 +11,10 @@ import pl.training.payments.application.output.TimeProvider
 @Configuration
 class ApplicationConfiguration {
 
-    // @Scope("prototype")
-    @Bean(name = ["cards"], initMethod = "initialize", destroyMethod = "destroy")
+    @Bean
     fun cardsService(
         cardsRepository: CardsRepository,
-        @Qualifier("systemTimeProvider") timeProvider: TimeProvider,
+        timeProvider: TimeProvider,
         eventPublisher: CardsEventPublisher
     ): Cards = CardsService(cardsRepository, timeProvider, eventPublisher)
 

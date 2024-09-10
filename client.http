@@ -1,0 +1,8 @@
+POST http://localhost:8000/api/cards/4237251412344005/charges
+Accept: application/json
+Content-Type: application/json
+
+{
+  "amount": 100,
+  "currency": "PLN"
+}
