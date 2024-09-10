@@ -50,7 +50,7 @@ fun <T> toJson(objs: List<T>) =
 /*
     JsonScope<T> is the dispatcher receiver of the toJson function. In this way, we limit the visibility of the
     toJson function, which allows us to call it only inside the scope. We say that the toJson function is a
-    context-dependent construct.bWe can access the dispatcher receiver in the function body as this.
+    context-dependent construct. We can access the dispatcher receiver in the function body as this.
     As we might guess, Kotlin represents the this reference as a union type of the dispatcher receiver and the
     receiver of the extension function.
 */
@@ -96,7 +96,6 @@ val contactJsonScope = object : JsonScope<Contact> {
         println(contactJsonScope.toJson(CONTACTS))
 
         We are limited to having only one receiver using extension functions with scopes.
-
  */
 fun main() {
     with(contactJsonScope) {
@@ -115,6 +114,7 @@ fun main() {
     receiver and the safe place to call the suspend functions.
 */
 
+/*
 interface JsonScope<T> {    // <- dispatcher receiver
     fun T.toJson(): String  // <- extension function receiver
     // 'this' type in 'toJson' function is JsonScope<T> & T
@@ -158,6 +158,7 @@ fun main() {
     }
     // println(contactJsonScope.toJson(CONTACTS)) // error
 }
+*/
 
 /*
    Context properties - future alternative for context receivers
