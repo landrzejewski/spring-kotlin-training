@@ -92,10 +92,3 @@ fun main() {
     person.name = "Jan"
     println(person.name)
 }
-
-@Suppress("UNCHECKED_CAST")
-fun <V> readPropert(instance: Any, propertName: String): V {
-    val property = instance::class.members
-        .first { it.name == propertName } as KProperty1<Any, *>
-    return property.get(instance) as V
-}

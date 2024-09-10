@@ -63,7 +63,7 @@ fun drive(garage: Garage<Car>) {
     val vehicle = garage.getLast()
 }
 
-fun main2() {
+fun main() {
     Wrapper(2)
     Wrapper("Test")
 
