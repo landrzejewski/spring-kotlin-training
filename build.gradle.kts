@@ -10,9 +10,10 @@ repositories {
 }
 
 dependencies {
+    implementation("org.springframework:spring-context:6.1.11")
+    implementation("org.aspectj:aspectjweaver:1.9.22.1")
+    implementation("jakarta.annotation:jakarta.annotation-api:3.0.0")
     testImplementation(kotlin("test"))
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.11.0")
-    testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
 }
 
 tasks.test {
@@ -20,10 +21,4 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(21)
-}
-
-tasks.named("compileKotlin", org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask::class.java) {
-    compilerOptions {
-        freeCompilerArgs.add("-Xcontext-receivers")
-    }
 }
