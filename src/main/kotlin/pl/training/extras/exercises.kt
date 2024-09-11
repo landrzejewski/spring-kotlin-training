@@ -1,4 +1,4 @@
-package pl.training
+package pl.training.extras
 
 // Write a function that counts the number of occurrences of a given letter in a word/sentence
 

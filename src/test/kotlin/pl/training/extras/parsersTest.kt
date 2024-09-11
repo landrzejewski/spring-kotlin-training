@@ -1,11 +1,8 @@
-package pl.training.parsers
+package pl.training.extras
 
 import org.junit.jupiter.api.Test
-import pl.training.parsers.Result.Failure
-import pl.training.parsers.Result.Success
-import kotlin.comparisons.then
-import kotlin.or
-import kotlin.rem
+import pl.training.extras.Result.Failure
+import pl.training.extras.Result.Success
 import kotlin.test.assertEquals
 
 class ParsersTest {

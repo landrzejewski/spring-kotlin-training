@@ -1,10 +1,10 @@
-package pl.training
+package pl.training.extras
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.ValueSource
-import pl.training.Player.CROSS
+import pl.training.extras.Player.CROSS
 import java.lang.IllegalArgumentException
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse

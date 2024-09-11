@@ -1,4 +1,4 @@
-package pl.training.parsers
+package pl.training.extras
 
 import pl.training.parsers.Result.Failure
 import pl.training.parsers.Result.Success

@@ -1,12 +1,11 @@
-package pl.training
+package pl.training.extras
 
-import pl.training.Player.CROSS
 import java.util.Collections.disjoint
 
 class TicTacToe(
     private var crossFields: MutableSet<Int> = mutableSetOf<Int>(),
     private var circleFields: MutableSet<Int> = mutableSetOf<Int>(),
-    startingPlayer: Player = CROSS
+    startingPlayer: Player = Player.CROSS
 ) {
 
     var currentPlayer = startingPlayer
@@ -35,7 +34,7 @@ class TicTacToe(
         return true
     }
 
-    private fun playerFields() = if (currentPlayer == CROSS) crossFields else circleFields
+    private fun playerFields() = if (currentPlayer == Player.CROSS) crossFields else circleFields
 
     private fun isOnBoard(field: Int) = field in FIRST_FILED_NUMBER..BOARD_SIZE
 

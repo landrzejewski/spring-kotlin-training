@@ -1,4 +1,4 @@
-package pl.training
+package pl.training.extras
 
 enum class Player {
 
