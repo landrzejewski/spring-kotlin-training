@@ -16,6 +16,8 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
     implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.14")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+
     testImplementation(kotlin("test"))
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.11.0")
     testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")

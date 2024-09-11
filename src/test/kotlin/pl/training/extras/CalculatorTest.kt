@@ -3,8 +3,6 @@ package pl.training.extras
 import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.*
 
-// private val repository = mock<PaymentRepository> { on { save(any()) } doAnswer AdditionalAnswers.returnsFirstArg<Payment>() }
-
 class CalculatorTest {
 
     private val sut = Calculator()
