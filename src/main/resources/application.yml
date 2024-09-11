@@ -1,9 +1,7 @@
 spring:
-  data:
-    mongodb:
-      username: admin
-      password: admin
-      database: training
-      host: localhost
-      port: 27017
-      authentication-database: admin
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/users
+    username: admin
+    password: admin
+    pool:
+      enabled: true

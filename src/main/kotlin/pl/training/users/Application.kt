@@ -1,4 +1,4 @@
-package pl.training.payments
+package pl.training.users
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

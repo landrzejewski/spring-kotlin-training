@@ -1,8 +1,20 @@
-POST http://localhost:8000/api/cards/4237251412344005/charges
+POST http://localhost:8080/api/users
 Accept: application/json
 Content-Type: application/json
 
 {
-  "amount": 100,
-  "currency": "PLN"
+  "username": "Jan",
+  "email": "jan@training.pl"
 }
+
+###
+
+GET http://localhost:8080/api/users/7
+Accept: application/json
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/users
+Accept: application/json
+Content-Type: application/json
