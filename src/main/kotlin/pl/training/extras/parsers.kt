@@ -1,7 +1,7 @@
 package pl.training.extras
 
-import pl.training.parsers.Result.Failure
-import pl.training.parsers.Result.Success
+import pl.training.extras.Result.Failure
+import pl.training.extras.Result.Success
 
 fun keyValuePair(text: String): Pair<String, String> {
     val (key, value) = text.split(":")
