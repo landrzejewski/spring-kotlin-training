@@ -1,4 +1,4 @@
-package pl.training.coroutinesimport kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.flowOf

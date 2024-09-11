@@ -1,4 +1,4 @@
-package pl.training.coroutinesimport kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.produce
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay

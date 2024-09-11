@@ -1,4 +1,4 @@
-package pl.training.coroutines/*
+/*
     Coroutines are components that can be suspended and resumed. Unlike the use of threads, there is no blocking here.
     When a thread is blocked, it still consumes resources and needs to be managed by the operating system.
     When a coroutine is suspended, the only thing that remains is an object that keeps references to local variables

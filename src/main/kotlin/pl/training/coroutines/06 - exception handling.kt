@@ -1,4 +1,4 @@
-package pl.training.coroutinesimport kotlinx.coroutines.CoroutineExceptionHandler
+import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.async

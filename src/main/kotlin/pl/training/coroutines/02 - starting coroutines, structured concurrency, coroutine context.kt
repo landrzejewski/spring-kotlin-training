@@ -1,4 +1,4 @@
-package pl.training.coroutines/*
+/*
     Starting coroutines is possible using:
         Asynchronous coroutine builders (launch and async), which start an asynchronous coroutine
         Blocking coroutine builders (runBlocking and runTest), which start a coroutine on the current thread and block it until the coroutine is done

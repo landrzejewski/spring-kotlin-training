@@ -1,4 +1,4 @@
-package pl.training.coroutines/*
+/*
     The easiest way to create a coroutine scope object is by using the CoroutineScope
     factory function. It creates a scope with the provided context (and an additional
     Job for structured concurrency if no job is already part of the context).

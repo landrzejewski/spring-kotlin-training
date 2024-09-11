@@ -18,11 +18,12 @@ class UserApiTest {
     )
 
     @Test
-    fun singleRequest() {
-        GlobalScope.launch {
-            println("Ids: ${usersApi.getUsersIds()}")
+    fun singleRequest(): Unit = runBlocking {
+        coroutineScope {
+            launch {
+                println("Ids: ${usersApi.getUsersIds()}")
+            }
         }
-        Thread.sleep(1_000)
     }
 
     @Test

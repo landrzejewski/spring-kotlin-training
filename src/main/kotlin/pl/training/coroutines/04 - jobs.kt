@@ -1,4 +1,4 @@
-package pl.training.coroutinesimport kotlinx.coroutines.Job
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

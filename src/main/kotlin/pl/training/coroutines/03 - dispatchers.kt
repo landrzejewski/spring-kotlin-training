@@ -1,4 +1,4 @@
-package pl.training.coroutinesimport kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
 /*
