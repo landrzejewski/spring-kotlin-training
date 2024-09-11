@@ -8,7 +8,7 @@ fun main() {
 
     val newPayment = PaymentDto(id = "", value = 100.0, currency = "PLN", status = "NOT_CONFIRMED")
 
-    println("Adding payment")
+    /*println("Adding payment")
     val savedPayment = WebClient.builder()
         .baseUrl(baseUrl)
         .build()
@@ -16,27 +16,28 @@ fun main() {
         .bodyValue(newPayment)
         .retrieve()
         .bodyToMono(PaymentDto::class.java)
-        .block()
+        .map { it.id }
+        .subscribe(System.out::println, System.err::println)*/
 
-    println("Retrieving status")
-    val status = WebClient.builder()
-        .baseUrl(baseUrl)
-        .build()
-        .get()
-        .uri("/${savedPayment!!.id}")
-        .retrieve()
-        .bodyToMono(String::class.java)
-        .block()
-    println("Status: $status")
+//    println("Retrieving status")
+//    val status = WebClient.builder()
+//        .baseUrl(baseUrl)
+//        .build()
+//        .get()
+//        .uri("/${savedPayment!!.id}")
+//        .retrieve()
+//        .bodyToMono(String::class.java)
+//        .block()
+//    println("Status: $status")
 
-    /*println("Retrieving payments:")
+    println("Retrieving payments:")
     WebClient.builder()
         .baseUrl(baseUrl)
         .build()
         .get()
         .retrieve()
         .bodyToFlux(PaymentDto::class.java)
-        .subscribe(System.out::println, System.err::println)*/
+        .subscribe(System.out::println, System.err::println)
 
     /*println("Retrieving confirmed payments in EUR:")
     WebClient.builder()
