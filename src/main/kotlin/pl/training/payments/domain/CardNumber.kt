@@ -7,13 +7,11 @@ value class CardNumber(val value: String) {
         require(numberPattern.matches(value))
     }
 
-    override fun toString(): String {
-        return value
-    }
+    override fun toString() = value
 
     companion object {
 
-        val numberPattern = "\\d{16,19}".toRegex()
+        private val numberPattern = "\\d{16,19}".toRegex()
 
     }
 

@@ -1,12 +1,16 @@
 package pl.training.payments.domain
 
-import pl.training.payments.domain.CardTransactionType.WITHDRAW
+import pl.training.payments.domain.CardTransactionType.PAYMENT
+import java.time.LocalDate
 import java.time.ZonedDateTime
+import java.util.Currency
 
-data class CardTransaction(val timestamp: ZonedDateTime, val money: Money, val type: CardTransactionType = WITHDRAW) {
+data class CardTransaction(val timestamp: ZonedDateTime, val money: Money, val type: CardTransactionType) {
 
-    val localDate = timestamp.toLocalDate()
+    fun hasCurrency(currency: Currency) = money.currency == currency
 
-    fun isWithdraw() = type == WITHDRAW
+    fun isBefore(localDate: LocalDate) = timestamp.toLocalDate().isBefore(localDate)
+
+    fun isPayment() = type == PAYMENT
 
 }

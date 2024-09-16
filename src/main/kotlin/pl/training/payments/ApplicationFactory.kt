@@ -1,29 +1,33 @@
 package pl.training.payments
 
-import pl.training.payments.infrastructure.input.CardServiceLoggingProxy
-import pl.training.payments.application.CardsService
-import pl.training.payments.application.input.Cards
-import pl.training.payments.application.output.CardsEventPublisher
-import pl.training.payments.application.output.CardsRepository
+import pl.training.payments.application.CardOperationsService
+import pl.training.payments.application.CardInfoService
+import pl.training.payments.application.input.CardOperations
+import pl.training.payments.application.input.CardInfo
+import pl.training.payments.application.output.CardEventPublisher
+import pl.training.payments.application.output.CardRepository
 import pl.training.payments.application.output.TimeProvider
-import pl.training.payments.infrastructure.input.CardsViewModel
-import pl.training.payments.infrastructure.output.ConsoleCardsEventPublisher
-import pl.training.payments.infrastructure.output.InMemoryCardsRepository
+import pl.training.payments.infrastructure.input.CardOperationsLoggingProxy
+import pl.training.payments.infrastructure.input.CardViewModel
+import pl.training.payments.infrastructure.output.ConsoleCardEventPublisher
+import pl.training.payments.infrastructure.output.InMemoryCardRepository
 import pl.training.payments.infrastructure.output.SystemTimeProvider
 
 object ApplicationFactory {
 
-    val cardsRepository: CardsRepository = InMemoryCardsRepository()
+    val cardRepository: CardRepository = InMemoryCardRepository()
 
     private fun timeProvider(): TimeProvider = SystemTimeProvider()
 
-    private val cardsEventPublisher: CardsEventPublisher = ConsoleCardsEventPublisher()
+    private val cardEventPublisher: CardEventPublisher = ConsoleCardEventPublisher()
 
-    private fun cards(): Cards {
-        val cardsService = CardsService(cardsRepository, timeProvider(), cardsEventPublisher)
-        return CardServiceLoggingProxy(cardsService)
+    private fun cardOperations(): CardOperations {
+        val cardsService = CardOperationsService(cardRepository, timeProvider(), cardEventPublisher)
+        return CardOperationsLoggingProxy(cardsService)
     }
 
-    fun paymentsViewModel() = CardsViewModel(cards())
+    private fun cardsInfo(): CardInfo = CardInfoService(cardRepository)
+
+    fun paymentsViewModel() = CardViewModel(cardOperations(), cardsInfo())
 
 }

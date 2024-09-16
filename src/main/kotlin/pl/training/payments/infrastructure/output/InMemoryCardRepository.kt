@@ -1,10 +1,10 @@
 package pl.training.payments.infrastructure.output
 
-import pl.training.payments.application.output.CardsRepository
+import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardNumber
 
-class InMemoryCardsRepository : CardsRepository {
+class InMemoryCardRepository : CardRepository {
 
     private val data = mutableMapOf<CardNumber, Card>()
 
