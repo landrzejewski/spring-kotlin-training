@@ -1,11 +1,11 @@
-package pl.training.payments.util.aop
+package pl.training.payments.utils.aop
 
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
 import org.aspectj.lang.annotation.Aspect
 import org.springframework.stereotype.Component
-import pl.training.payments.util.annotations.Lock
-import pl.training.payments.util.annotations.Lock.LockType.WRITE
+import pl.training.payments.utils.annotations.Lock
+import pl.training.payments.utils.annotations.Lock.LockType.WRITE
 import java.util.concurrent.locks.ReentrantReadWriteLock
 
 @Aspect
