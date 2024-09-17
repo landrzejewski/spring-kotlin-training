@@ -1,4 +1,4 @@
-package pl.training.payments.infrastructure.input
+package pl.training.payments.adapters.input
 
 import pl.training.payments.application.input.CardOperations
 import pl.training.payments.domain.CardNumber

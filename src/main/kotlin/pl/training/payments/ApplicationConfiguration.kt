@@ -7,13 +7,13 @@ import pl.training.payments.application.input.CardInfo
 import pl.training.payments.application.output.CardEventPublisher
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.application.output.TimeProvider
-import pl.training.payments.infrastructure.input.CardOperationsLoggingProxy
-import pl.training.payments.infrastructure.input.CardViewModel
-import pl.training.payments.infrastructure.output.ConsoleCardEventPublisher
-import pl.training.payments.infrastructure.output.InMemoryCardRepository
-import pl.training.payments.infrastructure.output.SystemTimeProvider
+import pl.training.payments.adapters.input.CardOperationsLoggingProxy
+import pl.training.payments.adapters.input.CardViewModel
+import pl.training.payments.adapters.output.ConsoleCardEventPublisher
+import pl.training.payments.adapters.output.InMemoryCardRepository
+import pl.training.payments.adapters.output.SystemTimeProvider
 
-object ApplicationFactory {
+object ApplicationConfiguration {
 
     val cardRepository: CardRepository = InMemoryCardRepository()
 
