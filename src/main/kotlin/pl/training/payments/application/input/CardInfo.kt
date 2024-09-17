@@ -7,6 +7,7 @@ import pl.training.payments.domain.Money
 interface CardInfo {
 
     fun transactions(cardNumber: CardNumber): List<CardTransaction>
+
     fun balance(cardNumber: CardNumber): Money
 
 }

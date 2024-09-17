@@ -8,7 +8,7 @@ import pl.training.payments.domain.Money
 import java.util.Currency
 
 @Component
-class CardViewModel(
+open class CardViewModel(
     private val cardOperations: CardOperations,
     private val cardInfo: CardInfo
 ) {

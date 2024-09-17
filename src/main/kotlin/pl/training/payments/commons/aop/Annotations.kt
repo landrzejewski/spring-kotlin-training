@@ -1,19 +1,18 @@
-package pl.training.payments.commons.aop;
+package pl.training.payments.commons.aop
 
 import org.aspectj.lang.JoinPoint
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.reflect.MethodSignature
 import java.lang.reflect.Method
-import kotlin.reflect.KClass
 
 object Annotations {
 
-    fun <T : Annotation> getClassAnnotation(joinPoint: ProceedingJoinPoint, type: KClass<T>): T? {
-        return joinPoint.target.javaClass.getAnnotation(type.java)
+    fun <T : Annotation> getClassAnnotation(joinPoint: ProceedingJoinPoint, type: Class<T>): T? {
+        return joinPoint.target.javaClass.getAnnotation(type)
     }
 
-    fun <T : Annotation> getMethodAnnotation(joinPoint: ProceedingJoinPoint, type: KClass<T>): T? {
-        return getTargetMethod(joinPoint).getAnnotation(type.java)
+    fun <T : Annotation> getMethodAnnotation(joinPoint: ProceedingJoinPoint, type: Class<T>): T? {
+        return getTargetMethod(joinPoint).getAnnotation(type)
     }
 
     fun getTargetMethod(joinPoint: JoinPoint): Method {
@@ -23,18 +22,18 @@ object Annotations {
         return joinPoint.target.javaClass.getMethod(methodName, *parameterTypes)
     }
 
-    fun <T : Annotation> findAnnotation(joinPoint: ProceedingJoinPoint, type: KClass<T>): T? {
+    fun <T : Annotation> findAnnotation(joinPoint: ProceedingJoinPoint, type: Class<T>): T? {
         return getMethodAnnotation(joinPoint, type) ?: getClassAnnotation(joinPoint, type)
     }
 
-    fun <T : Annotation> findAnnotation(annotations: Array<Annotation>, type: KClass<T>): T? {
-        return annotations.filterIsInstance(type.java).firstOrNull()
+    fun <T : Annotation> findAnnotation(annotations: Array<Annotation>, type: Class<T>): T? {
+        return annotations.filterIsInstance(type).firstOrNull()
     }
 
     @Suppress("UNCHECKED_CAST")
     fun <P, A : Annotation> applyArgumentOperator(
         joinPoint: JoinPoint,
-        annotationType: KClass<A>,
+        annotationType: Class<A>,
         argumentOperator: ArgumentOperator<P, A>
     ) {
         val arguments = joinPoint.args
