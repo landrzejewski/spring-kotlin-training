@@ -5,7 +5,7 @@ import pl.training.payments.domain.Money
 
 interface CardOperations {
 
-    fun payment(cardNumber: CardNumber, amount: Money)
     fun inflow(cardNumber: CardNumber, amount: Money)
+    fun payment(cardNumber: CardNumber, amount: Money)
 
 }

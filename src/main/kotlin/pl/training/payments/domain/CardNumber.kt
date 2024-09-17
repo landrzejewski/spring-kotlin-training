@@ -4,14 +4,14 @@ package pl.training.payments.domain
 value class CardNumber(val value: String) {
 
     init {
-        require(numberPattern.matches(value))
+        require(NUMBER_PATTERN.matches(value))
     }
 
     override fun toString() = value
 
     companion object {
 
-        private val numberPattern = "\\d{16,19}".toRegex()
+        private val NUMBER_PATTERN = "\\d{16,19}".toRegex()
 
     }
 

@@ -1,18 +1,21 @@
 package pl.training.payments.domain
 
+import pl.training.payments.domain.CardTransactionType.INFLOW
+import pl.training.payments.domain.CardTransactionType.PAYMENT
+import java.math.BigDecimal.ZERO
 import java.time.LocalDate
 import java.util.Currency
 import java.util.function.Consumer
 
-data class Card(
+class Card(
     val id: CardId,
     val number: CardNumber,
     val expiration: LocalDate,
     val currency: Currency
 ) {
 
-    val balance
-        get() = Money(transactions.sumOf { it.money.amount }, currency)
+    var balance = Money(ZERO, currency)
+        private set
 
     fun registeredTransactions(): List<CardTransaction> = transactions
 
@@ -21,7 +24,7 @@ data class Card(
 
     fun registerTransaction(transaction: CardTransaction) {
         validate(transaction)
-        add(transaction)
+        commit(transaction)
         publish(transaction)
     }
 
@@ -37,7 +40,19 @@ data class Card(
         }
     }
 
-    private fun add(transaction: CardTransaction) = transactions.add(transaction)
+    private fun commit(transaction: CardTransaction) {
+        transactions.add(transaction)
+        updateBalance()
+    }
+
+    private fun updateBalance() {
+        balance = transactions.fold(Money(ZERO, currency)) { totalBalance, transaction ->
+            when (transaction.type) {
+                INFLOW -> totalBalance + transaction.money
+                PAYMENT -> totalBalance - transaction.money
+            }
+        }
+    }
 
     private fun publish(transaction: CardTransaction) {
         val event = CardTransactionRegistered(number, transaction)

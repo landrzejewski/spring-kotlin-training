@@ -15,7 +15,9 @@ class CardViewModel(
 
     fun pay(value: Double) = cardOperations.payment(CARD_NUMBER, Money(value, CURRENCY))
 
-    fun getCardTransactions() = cardInfo.transactions(CARD_NUMBER)
+    fun getTransactions() = cardInfo.transactions(CARD_NUMBER)
+
+    fun getBalance() = cardInfo.balance(CARD_NUMBER)
 
     companion object {
 

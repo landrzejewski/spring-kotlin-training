@@ -16,6 +16,9 @@ fun main() {
     viewModel.depositFunds(1000.0)
     viewModel.pay(100.0)
     viewModel.pay(50.0)
-    println("Transactions for card ${card.number}:")
-    viewModel.getCardTransactions().forEach { println(it) }
+
+    println("---------------------------------- Summary ----------------------------------")
+    println("Transactions:")
+    viewModel.getTransactions().forEach { println(it) }
+    println("Balance: ${viewModel.getBalance()}")
 }

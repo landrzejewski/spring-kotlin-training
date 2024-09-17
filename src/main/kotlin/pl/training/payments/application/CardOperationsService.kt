@@ -15,25 +15,24 @@ class CardOperationsService(
     private val eventPublisher: CardEventPublisher
 ) : CardOperations {
 
-    override fun payment(cardNumber: CardNumber, amount: Money) = addTransaction(cardNumber, amount, PAYMENT)
+    override fun inflow(cardNumber: CardNumber, amount: Money) =
+        addTransaction(cardNumber, CardTransaction(timeProvider.getTimestamp(), amount, INFLOW))
 
-    override fun inflow(cardNumber: CardNumber, amount: Money) = addTransaction(cardNumber, amount, INFLOW)
+    override fun payment(cardNumber: CardNumber, amount: Money) =
+        addTransaction(cardNumber, CardTransaction(timeProvider.getTimestamp(), amount, PAYMENT))
 
-    private fun addTransaction(cardNumber: CardNumber, amount: Money, transactionType: CardTransactionType) {
+    private fun addTransaction(cardNumber: CardNumber, transaction: CardTransaction) {
         val card = repository.getByNumber(cardNumber) ?: throw CardNotFoundException()
         val eventListener = createCardEventListener()
         card.addEventsListener(eventListener)
-        val transaction = CardTransaction(timeProvider.getTimestamp(), amount, transactionType)
         card.registerTransaction(transaction)
         card.removeEventsListener(eventListener)
         repository.save(card)
     }
 
-    private fun createCardEventListener(): Consumer<CardTransactionRegistered> {
-        return Consumer<CardTransactionRegistered> {
-            val appEvent = CardTransactionEvent(it.number.toString(), it.transaction.type.name)
-            eventPublisher.publish(appEvent)
-        }
+    private fun createCardEventListener() = Consumer<CardTransactionRegistered> {
+        val appEvent = CardTransactionEvent(it.number.toString(), it.transaction.type.name)
+        eventPublisher.publish(appEvent)
     }
 
 }

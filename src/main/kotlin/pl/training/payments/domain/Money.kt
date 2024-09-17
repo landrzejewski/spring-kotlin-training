@@ -13,12 +13,12 @@ data class Money(val amount: BigDecimal, val currency: Currency) {
 
     fun add(money: Money): Money {
         checkCurrencyCompatibility(money)
-        return Money(amount.add(money.amount), currency)
+        return Money(amount + money.amount, currency)
     }
 
     fun subtract(money: Money): Money {
         checkCurrencyCompatibility(money)
-        return Money(amount.subtract(money.amount), currency)
+        return Money(amount - money.amount, currency)
     }
 
     fun isGreaterOrEqual(money: Money): Boolean {
