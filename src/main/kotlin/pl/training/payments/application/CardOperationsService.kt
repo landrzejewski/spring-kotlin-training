@@ -4,6 +4,7 @@ import pl.training.payments.application.input.CardOperations
 import pl.training.payments.application.output.CardEventPublisher
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.application.output.TimeProvider
+import pl.training.payments.commons.annotations.Loggable
 import pl.training.payments.domain.*
 import pl.training.payments.domain.CardTransactionType.INFLOW
 import pl.training.payments.domain.CardTransactionType.PAYMENT
@@ -23,7 +24,7 @@ class CardOperationsService(
 
     // @Retry
     // @Timer
-    // @Loggable
+    @Loggable
     override fun payment(cardNumber: CardNumber, amount: Money) =
         addTransaction(cardNumber, CardTransaction(timeProvider.getTimestamp(), amount, PAYMENT))
 

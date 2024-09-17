@@ -26,7 +26,7 @@ class TimerAspect : Ordered {
         val result = joinPoint.proceed()
         val endTime = getTime(timeUnit)
         val totalTime = endTime - startTime
-        log.info("Execution time for method ${joinPoint.signature} is $totalTime ${timeUnit.name.lowercase()}")
+        log.info("Execution time for method ${joinPoint.signature}: $totalTime ${timeUnit.name.lowercase()}")
         return result
     }
 
