@@ -11,7 +11,7 @@ import pl.training.payments.domain.CardTransactionType.PAYMENT
 import java.util.function.Consumer
 import java.util.logging.Logger
 
-class CardOperationsService(
+open class CardOperationsService(
     private val repository: CardRepository,
     private val timeProvider: TimeProvider,
     private val eventPublisher: CardEventPublisher
