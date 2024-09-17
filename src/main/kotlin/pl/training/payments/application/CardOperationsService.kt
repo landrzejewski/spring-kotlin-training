@@ -9,7 +9,7 @@ import pl.training.payments.domain.CardTransactionType.INFLOW
 import pl.training.payments.domain.CardTransactionType.PAYMENT
 import java.util.function.Consumer
 
-class CardOperationsService(
+open class CardOperationsService(
     private val repository: CardRepository,
     private val timeProvider: TimeProvider,
     private val eventPublisher: CardEventPublisher
