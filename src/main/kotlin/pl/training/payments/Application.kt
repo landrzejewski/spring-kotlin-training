@@ -1,6 +1,9 @@
 package pl.training.payments
 
-import org.springframework.context.annotation.AnnotationConfigApplicationContext
+import org.springframework.boot.ApplicationArguments
+import org.springframework.boot.ApplicationRunner
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
@@ -9,13 +12,14 @@ import pl.training.payments.infrastructure.input.CardViewModel.Companion.CARD_NU
 import pl.training.payments.infrastructure.input.CardViewModel.Companion.CURRENCY
 import java.time.LocalDate
 
-fun main() {
-    AnnotationConfigApplicationContext(ApplicationConfiguration::class.java).use { context ->
+@SpringBootApplication
+class Application(private val cardRepository: CardRepository, private val viewModel: CardViewModel) :
+    ApplicationRunner {
+
+    override fun run(args: ApplicationArguments?) {
         // Initialization
         val card = Card(id = CardId(1), number = CARD_NUMBER, expiration = LocalDate.now().plusYears(1), currency = CURRENCY)
-        context.getBean(CardRepository::class.java).save(card)
-
-        val viewModel = context.getBean(CardViewModel::class.java)
+        cardRepository.save(card)
 
         // Application logic
         viewModel.depositFunds(1000.0)
@@ -28,4 +32,8 @@ fun main() {
         println("Balance: ${viewModel.getBalance()}")
     }
 
+}
+
+fun main(args: Array<String>) {
+    runApplication<Application>(*args)
 }
