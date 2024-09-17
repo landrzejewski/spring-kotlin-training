@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import pl.training.payments.application.CardInfoService
 import pl.training.payments.application.CardOperationsService
+import pl.training.payments.application.input.CardOperations
 import pl.training.payments.application.output.CardEventPublisher
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.application.output.TimeProvider
@@ -18,7 +19,7 @@ class ApplicationConfiguration {
         cardRepository: CardRepository,
         @Qualifier("systemTimeProvider") timeProvider: TimeProvider,
         eventPublisher: CardEventPublisher
-    ): CardOperationsService = CardOperationsService(cardRepository, timeProvider, eventPublisher)
+    ): CardOperations= CardOperationsService(cardRepository, timeProvider, eventPublisher)
 
     @Bean
     fun cardInfoService(cardRepository: CardRepository) = CardInfoService(cardRepository)
