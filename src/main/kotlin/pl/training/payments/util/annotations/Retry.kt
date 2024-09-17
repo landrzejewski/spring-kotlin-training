@@ -1,4 +1,4 @@
-package pl.training.payments.commons.annotations
+package pl.training.payments.util.annotations
 
 @Target(AnnotationTarget.FUNCTION)
 annotation class Retry(

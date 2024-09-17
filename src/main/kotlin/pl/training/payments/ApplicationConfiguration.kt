@@ -22,7 +22,7 @@ open class ApplicationConfiguration {
         cardRepository: CardRepository,
         @Qualifier("systemTimeProvider") timeProvider: TimeProvider,
         eventPublisher: CardEventPublisher
-    ): CardOperationsService = CardOperationsService(cardRepository, timeProvider, eventPublisher)
+    ) = CardOperationsService(cardRepository, timeProvider, eventPublisher)
 
     @Bean
     open fun cardInfoService(cardRepository: CardRepository) = CardInfoService(cardRepository)

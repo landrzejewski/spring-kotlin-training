@@ -4,9 +4,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
-import pl.training.payments.infrastructure.input.CardViewModel
-import pl.training.payments.infrastructure.input.CardViewModel.Companion.CARD_NUMBER
-import pl.training.payments.infrastructure.input.CardViewModel.Companion.CURRENCY
+import pl.training.payments.adapters.input.CardViewModel
+import pl.training.payments.adapters.input.CardViewModel.Companion.CARD_NUMBER
+import pl.training.payments.adapters.input.CardViewModel.Companion.CURRENCY
 import java.time.LocalDate
 
 fun main() {

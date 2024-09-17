@@ -1,4 +1,4 @@
-package pl.training.payments.infrastructure.output
+package pl.training.payments.adapters.output
 
 import org.springframework.stereotype.Repository
 import pl.training.payments.application.output.CardRepository
