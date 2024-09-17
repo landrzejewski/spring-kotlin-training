@@ -1,11 +1,13 @@
 package pl.training.payments.infrastructure.input
 
+import org.springframework.stereotype.Component
 import pl.training.payments.application.input.CardInfo
 import pl.training.payments.application.input.CardOperations
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.Money
 import java.util.Currency
 
+@Component
 class CardViewModel(
     private val cardOperations: CardOperations,
     private val cardInfo: CardInfo
