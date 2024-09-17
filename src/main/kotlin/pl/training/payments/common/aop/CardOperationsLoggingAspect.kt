@@ -1,4 +1,4 @@
-package pl.training.payments.commons.aop
+package pl.training.payments.common.aop
 
 import org.aspectj.lang.JoinPoint
 import org.aspectj.lang.annotation.After
@@ -20,7 +20,7 @@ class CardOperationsLoggingAspect {
 
     private val log = Logger.getLogger(CardOperationsLoggingAspect::class.java.name)
 
-    @Pointcut("@annotation(pl.training.payments.commons.annotations.Loggable)")
+    @Pointcut("@annotation(pl.training.payments.common.annotations.Loggable)")
     fun payment() {
     }
 

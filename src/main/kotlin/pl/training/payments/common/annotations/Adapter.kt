@@ -1,4 +1,4 @@
-package pl.training.payments.commons.annotations
+package pl.training.payments.common.annotations
 
 import org.springframework.core.annotation.AliasFor
 import org.springframework.stereotype.Component
