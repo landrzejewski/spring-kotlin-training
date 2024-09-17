@@ -1,4 +1,4 @@
-package pl.training.payments.infrastructure.output
+package pl.training.payments.adapters.output
 
 import org.springframework.stereotype.Component
 import pl.training.payments.application.CardTransactionEvent

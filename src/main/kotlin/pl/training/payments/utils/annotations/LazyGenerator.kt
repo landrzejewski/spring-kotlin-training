@@ -1,4 +1,4 @@
-package pl.training.payments.common.annotations
+package pl.training.payments.utils.annotations
 
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Lazy

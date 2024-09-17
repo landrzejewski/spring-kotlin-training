@@ -1,4 +1,4 @@
-package pl.training.payments.common.annotations
+package pl.training.payments.utils.annotations
 
 import kotlin.annotation.AnnotationTarget.FUNCTION
 
