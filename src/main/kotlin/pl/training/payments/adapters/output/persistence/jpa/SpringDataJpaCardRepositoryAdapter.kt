@@ -4,9 +4,9 @@ import org.springframework.context.annotation.Primary
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardNumber
-import pl.training.payments.utils.annotations.Adapter
-import pl.training.payments.utils.model.PageSpec
-import pl.training.payments.utils.model.ResultPage
+import pl.training.commons.annotations.Adapter
+import pl.training.commons.model.PageSpec
+import pl.training.commons.model.ResultPage
 
 @Primary
 @Adapter

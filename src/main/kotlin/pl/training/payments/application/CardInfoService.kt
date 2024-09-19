@@ -3,7 +3,7 @@ package pl.training.payments.application
 import pl.training.payments.application.input.CardInfo
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.*
-import pl.training.payments.utils.model.PageSpec
+import pl.training.commons.model.PageSpec
 
 open class CardInfoService(
     private val repository: CardRepository

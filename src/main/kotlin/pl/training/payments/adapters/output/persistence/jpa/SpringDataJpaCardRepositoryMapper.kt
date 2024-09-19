@@ -11,9 +11,9 @@ import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.CardTransaction
-import pl.training.payments.utils.annotations.Mapper
-import pl.training.payments.utils.model.PageSpec
-import pl.training.payments.utils.model.ResultPage
+import pl.training.commons.annotations.Mapper
+import pl.training.commons.model.PageSpec
+import pl.training.commons.model.ResultPage
 import java.util.Currency
 
 @Mapper

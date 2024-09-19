@@ -4,8 +4,8 @@ import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.CardTransaction
 import pl.training.payments.domain.Money
-import pl.training.payments.utils.model.PageSpec
-import pl.training.payments.utils.model.ResultPage
+import pl.training.commons.model.PageSpec
+import pl.training.commons.model.ResultPage
 
 interface CardInfo {
 

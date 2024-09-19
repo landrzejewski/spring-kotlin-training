@@ -6,7 +6,7 @@ import pl.training.payments.application.input.CardInfo
 import pl.training.payments.application.input.CardOperations
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.Money
-import pl.training.payments.utils.model.PageSpec
+import pl.training.commons.model.PageSpec
 import java.util.Currency
 
 @Transactional
