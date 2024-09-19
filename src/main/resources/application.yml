@@ -1,7 +1,0 @@
-spring:
-  r2dbc:
-    url: r2dbc:postgresql://localhost:5432/users
-    username: admin
-    password: admin
-    pool:
-      enabled: true
