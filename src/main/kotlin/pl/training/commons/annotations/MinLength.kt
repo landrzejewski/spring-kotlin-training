@@ -1,4 +1,4 @@
-package pl.training.payments.utils.annotations
+package pl.training.commons.annotations
 
 @Target(AnnotationTarget.VALUE_PARAMETER)
 @Retention(AnnotationRetention.RUNTIME)

@@ -1,4 +1,4 @@
-package pl.training.payments.utils.aop
+package pl.training.commons.aop
 
 import org.aspectj.lang.JoinPoint
 import org.aspectj.lang.ProceedingJoinPoint

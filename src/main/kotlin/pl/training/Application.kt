@@ -1,4 +1,4 @@
-package pl.training.payments
+package pl.training
 
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner

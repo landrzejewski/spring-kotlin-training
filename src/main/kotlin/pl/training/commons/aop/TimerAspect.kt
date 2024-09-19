@@ -1,4 +1,4 @@
-package pl.training.payments.utils.aop
+package pl.training.commons.aop
 
 
 import org.aspectj.lang.ProceedingJoinPoint
@@ -7,8 +7,8 @@ import org.aspectj.lang.annotation.Aspect
 import org.springframework.core.Ordered
 import org.springframework.core.annotation.Order
 import org.springframework.stereotype.Component
-import pl.training.payments.utils.annotations.Timer
-import pl.training.payments.utils.annotations.Timer.TimeUnit
+import pl.training.commons.annotations.Timer
+import pl.training.commons.annotations.Timer.TimeUnit
 import java.util.logging.Logger
 
 @Aspect

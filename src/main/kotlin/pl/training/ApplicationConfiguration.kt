@@ -1,4 +1,4 @@
-package pl.training.payments
+package pl.training
 
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.context.annotation.Bean
