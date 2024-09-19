@@ -5,11 +5,15 @@ import com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PRO
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.PageRequest
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.CardTransaction
 import pl.training.payments.utils.annotations.Mapper
+import pl.training.payments.utils.model.PageSpec
+import pl.training.payments.utils.model.ResultPage
 import java.util.Currency
 
 @Mapper
@@ -33,6 +37,14 @@ class SpringDataJpaCardRepositoryMapper {
         fromJson(cardEntity.transactions).forEach { card.registerTransaction(it) }
         return card
     }
+
+    fun toEntity(pageSpec: PageSpec) = PageRequest.of(pageSpec.index, pageSpec.size)
+
+    fun toDomain(page: Page<CardEntity>) = ResultPage(
+        page.content.map { toDomain(it) },
+        PageSpec(page.number, page.size),
+        page.totalPages
+    )
 
     private fun toJson(transactions: List<CardTransaction>) =
         JSON_MAPPER.writeValueAsString(transactions)

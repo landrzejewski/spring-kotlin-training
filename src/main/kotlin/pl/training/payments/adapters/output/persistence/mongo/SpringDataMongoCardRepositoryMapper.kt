@@ -1,9 +1,13 @@
 package pl.training.payments.adapters.output.persistence.mongo
 
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.PageRequest
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.utils.annotations.Mapper
+import pl.training.payments.utils.model.PageSpec
+import pl.training.payments.utils.model.ResultPage
 import java.util.Currency
 
 @Mapper
@@ -27,5 +31,14 @@ class SpringDataMongoCardRepositoryMapper {
         cardDocument.transactions.forEach { card.registerTransaction(it) }
         return card
     }
+
+
+    fun toDocument(pageSpec: PageSpec) = PageRequest.of(pageSpec.index, pageSpec.size)
+
+    fun toDomain(page: Page<CardDocument>) = ResultPage(
+        page.content.map { toDomain(it) },
+        PageSpec(page.number, page.size),
+        page.totalPages
+    )
 
 }

@@ -10,6 +10,7 @@ import pl.training.payments.adapters.input.CardViewModel.Companion.CURRENCY
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
+import pl.training.payments.utils.model.PageSpec
 import java.time.LocalDate
 
 @SpringBootApplication
