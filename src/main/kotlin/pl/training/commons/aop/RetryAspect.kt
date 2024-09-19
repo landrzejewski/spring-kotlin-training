@@ -1,10 +1,10 @@
-package pl.training.payments.utils.aop
+package pl.training.commons.aop
 
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
 import org.aspectj.lang.annotation.Aspect
 import org.springframework.stereotype.Component
-import pl.training.payments.utils.annotations.Retry
+import pl.training.commons.annotations.Retry
 import java.util.logging.Logger
 
 @Aspect

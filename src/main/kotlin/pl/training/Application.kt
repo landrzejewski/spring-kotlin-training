@@ -1,4 +1,4 @@
-package pl.training.payments
+package pl.training
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import pl.training.payments.adapters.input.CardViewModel
