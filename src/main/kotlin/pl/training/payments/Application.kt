@@ -19,7 +19,7 @@ class Application(private val cardRepository: CardRepository, private val viewMo
     override fun run(args: ApplicationArguments?) {
         // Initialization
         val card = Card(id = CardId(), number = CARD_NUMBER, expiration = LocalDate.now().plusYears(1), currency = CURRENCY)
-        // cardRepository.save(card)
+        cardRepository.save(card)
 
         // Application logic
         viewModel.depositFunds(1000.0)

@@ -1,12 +1,11 @@
 package pl.training.payments.adapters.output.persistence.mongo
 
-import org.springframework.context.annotation.Primary
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.utils.annotations.Adapter
 
-@Primary
+// @Primary
 @Adapter
 class SpringDataMongoCardRepositoryAdapter(
     private val repository: SpringDataMongoCardRepository,
