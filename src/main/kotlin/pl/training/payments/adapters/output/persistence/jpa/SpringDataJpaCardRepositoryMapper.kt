@@ -13,15 +13,12 @@ import pl.training.payments.utils.annotations.Mapper
 import java.util.Currency
 
 @Mapper
-class SpringDataCardRepositoryMapper {
-
-    fun toEntity(cardNumber: CardNumber) = cardNumber.toString()
+class SpringDataJpaCardRepositoryMapper {
 
     fun toEntity(card: Card) = CardEntity(
         card.id.value,
-        toEntity(card.number),
+        card.number.value,
         card.expiration,
-        card.balance.amount,
         card.balance.currency.currencyCode,
         toJson(card.registeredTransactions())
     )
@@ -31,15 +28,11 @@ class SpringDataCardRepositoryMapper {
             CardId(cardEntity.id),
             CardNumber(cardEntity.number),
             cardEntity.expiration,
-            toDomain(cardEntity.currencyCode)
+            Currency.getInstance(cardEntity.currencyCode)
         )
-        fromJson(cardEntity.transactions).forEach {
-            card.registerTransaction(it)
-        }
+        fromJson(cardEntity.transactions).forEach { card.registerTransaction(it) }
         return card
     }
-
-    private fun toDomain(currencyCode: String) = Currency.getInstance(currencyCode)
 
     private fun toJson(transactions: List<CardTransaction>) =
         JSON_MAPPER.writeValueAsString(transactions)

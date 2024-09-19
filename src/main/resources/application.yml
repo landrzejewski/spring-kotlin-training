@@ -7,4 +7,15 @@ spring:
     hikari:
       maximum-pool-size: 5
   jpa:
-    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    #generate-ddl: true
+  data:
+    mongodb:
+      username: admin
+      password: admin
+      database: training
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      auto-index-creation: true
