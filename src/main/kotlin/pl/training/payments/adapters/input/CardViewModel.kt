@@ -1,12 +1,14 @@
 package pl.training.payments.adapters.input
 
 import org.springframework.stereotype.Component
+import org.springframework.transaction.annotation.Transactional
 import pl.training.payments.application.input.CardInfo
 import pl.training.payments.application.input.CardOperations
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.Money
 import java.util.Currency
 
+@Transactional
 @Component
 class CardViewModel(
     private val cardOperations: CardOperations,
