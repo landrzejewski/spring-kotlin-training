@@ -1,4 +1,4 @@
-package pl.training.payments
+package pl.training
 
 import pl.training.payments.adapters.input.CardViewModel.Companion.CARD_NUMBER
 import pl.training.payments.adapters.input.CardViewModel.Companion.CURRENCY

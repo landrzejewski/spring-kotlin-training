@@ -1,4 +1,4 @@
-package pl.training.payments
+package pl.training
 
 import pl.training.payments.application.CardOperationsService
 import pl.training.payments.application.CardInfoService
