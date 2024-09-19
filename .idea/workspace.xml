@@ -5,47 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/CardViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/CardViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardInfoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardInfoService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardOperationsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardOperationsService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/input/CardInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/input/CardInfo.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/output/CardRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/output/CardRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderItemEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderItemEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderProjection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderProjection.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderSummary.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderSummary.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SearchCriteria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchCriteria.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SearchSpecification.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchSpecification.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataExamples.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataExamples.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataJpaOrderRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataJpaOrderRepositoryExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryExtensions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataJpaOrderRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Adapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Adapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Atomic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Atomic.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/LazyGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/LazyGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Lock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Lock.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Loggable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Loggable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Mapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Mapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/MinLength.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/MinLength.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Retry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Retry.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Timer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Timer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/Annotations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/Annotations.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/AtomicAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/AtomicAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/CardOperationsLoggingAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/CardOperationsLoggingAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/LockAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/LockAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/MinLengthAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/MinLengthAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/RetryAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/RetryAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/TimerAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/TimerAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/converters/ZonedDateTimeReadConverter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/converters/ZonedDateTimeReadConverter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/converters/ZonedDateTimeWriteConverter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/converters/ZonedDateTimeWriteConverter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/model/PageSpec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/PageSpec.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/model/ResultPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/ResultPage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationRequestDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationsRestController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderItemEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderProjection.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderSummary.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchCriteria.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchSpecification.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataExamples.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryExtensions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/CardViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +81,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="04-Spring-Boot" />
+        <entry key="$PROJECT_DIR$" value="05-Spring-Data" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,6 +98,10 @@
     &quot;accountId&quot;: &quot;f9b50971-c2ca-4758-9c05-146ec4061b6c&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -133,6 +117,8 @@
   "keyToString": {
     "Gradle.Build spring-kotlin-training.executor": "Run",
     "Gradle.spring-kotlin-training [clean].executor": "Run",
+    "HTTP Request.client | #1.executor": "Run",
+    "HTTP Request.client | #2.executor": "Run",
     "Kotlin.ApplicationKt.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -141,7 +127,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Application (1).executor": "Run",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "05-Spring-Data",
+    "git-widget-placeholder": "06-Spring-Web-MVC",
     "last_opened_file_path": "C:/Users/admin/Desktop/spring-kotlin-training/src/main/kotlin/pl/training/payments/utils/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -163,7 +149,17 @@
       <recent name="pl.training.payments" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.client | #2">
     <configuration name="spring-kotlin-training [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -186,6 +182,12 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="client | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="client | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="ApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.payments.ApplicationKt" />
       <module name="spring-kotlin-training.main" />
@@ -193,7 +195,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-kotlin-training.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.payments.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
       <module name="spring-kotlin-training.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.Application" />
       <extension name="coverage">
@@ -206,34 +216,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring-kotlin-training.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.payments.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Gradle.spring-kotlin-training [clean]" />
+      <item itemvalue="HTTP Request.client | #1" />
+      <item itemvalue="HTTP Request.client | #2" />
       <item itemvalue="Kotlin.ApplicationKt" />
       <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Spring Boot.Application (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="HTTP Request.client | #2" />
+        <item itemvalue="HTTP Request.client | #1" />
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Gradle.spring-kotlin-training [clean]" />
         <item itemvalue="Kotlin.ApplicationKt" />
-        <item itemvalue="Kotlin.ApplicationKt" />
-        <item itemvalue="Gradle.spring-kotlin-training [clean]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
       </set>
     </attachedChunks>
   </component>
@@ -249,6 +253,8 @@
       <workItem from="1726754669095" duration="20000" />
       <workItem from="1726754697366" duration="76000" />
       <workItem from="1726754802986" duration="1568000" />
+      <workItem from="1726768948456" duration="106000" />
+      <workItem from="1726769133948" duration="1870000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <option name="closed" value="true" />
@@ -306,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726745290747</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="r">
+      <option name="closed" value="true" />
+      <created>1726757561571</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726757561571</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

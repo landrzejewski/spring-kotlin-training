@@ -1,0 +1,21 @@
+POST localhost:8000/api/cards/4237251412344005/operations
+Accept: application/json
+Content-Type: application/json
+
+{
+  "operationType": "INFLOW",
+  "amount": 200.0,
+  "currencyCode": "PLN"
+}
+
+###
+
+POST localhost:8000/api/cards/4237251412344005/operations
+Accept: application/json
+Content-Type: application/json
+
+{
+  "operationType": "PAYMENT",
+  "amount": 100.0,
+  "currencyCode": "PLN"
+}
