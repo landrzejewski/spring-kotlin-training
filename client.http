@@ -1,4 +1,9 @@
-POST localhost:8000/api/cards/4237251412344005/operations
+GET http://localhost:8000/api/cards
+Accept: application/json
+Content-Type: application/json
+
+###
+POST http://localhost:8000/api/cards/4237251412344005/operations
 Accept: application/json
 Content-Type: application/json
 
@@ -9,8 +14,7 @@ Content-Type: application/json
 }
 
 ###
-
-POST localhost:8000/api/cards/4237251412344005/operations
+POST http://localhost:8000/api/cards/4237251412344005/operations
 Accept: application/json
 Content-Type: application/json
 
@@ -19,3 +23,8 @@ Content-Type: application/json
   "amount": 100.0,
   "currencyCode": "PLN"
 }
+
+###
+GET http://localhost:8000/api/cards/4237251412344005/operations
+Accept: application/json
+Content-Type: application/json

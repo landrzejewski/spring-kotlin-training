@@ -21,3 +21,5 @@ spring:
       port: 27017
       authentication-database: admin
       auto-index-creation: true
+  messages:
+    basename: exceptions

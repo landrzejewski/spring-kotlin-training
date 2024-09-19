@@ -5,26 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
-      <change afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationRequestDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationsRestController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/Base.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/Extended.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/MonetaryAmount.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/MonetaryAmountValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/ExceptionDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/GlobalRestExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/LocationUri.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/RestExceptionResponseBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardInfoRestController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/OperationTypeDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/exceptions.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/exceptions_pl_PL.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderItemEntity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderProjection.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderSummary.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchCriteria.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchSpecification.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataExamples.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryExtensions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/CardViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.http" beforeDir="false" afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationRequestDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationRequestDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationsRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationsRestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestMapper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,29 +121,35 @@
     "Gradle.spring-kotlin-training [clean].executor": "Run",
     "HTTP Request.client | #1.executor": "Run",
     "HTTP Request.client | #2.executor": "Run",
+    "HTTP Request.client | #3.executor": "Run",
+    "HTTP Request.client | #4.executor": "Run",
     "Kotlin.ApplicationKt.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Application (1).executor": "Run",
     "Spring Boot.Application.executor": "Run",
     "git-widget-placeholder": "06-Spring-Web-MVC",
-    "last_opened_file_path": "C:/Users/admin/Desktop/spring-kotlin-training/src/main/kotlin/pl/training/payments/utils/model",
+    "last_opened_file_path": "C:/Users/admin/Desktop/spring-kotlin-training/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\spring-kotlin-training\src\main\resources" />
       <recent name="C:\Users\admin\Desktop\spring-kotlin-training\src\main\kotlin\pl\training\payments\utils\model" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="pl.training.payments.adapters.input.rest" />
       <recent name="pl.training.payments.adapters.output.persistence.mongo" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
@@ -159,7 +167,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.client | #2">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="spring-kotlin-training [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -188,16 +196,23 @@
     <configuration name="client | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="ApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.training.payments.ApplicationKt" />
+    <configuration name="client | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="client | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-kotlin-training.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.payments.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
       <module name="spring-kotlin-training.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.payments.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,18 +233,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.spring-kotlin-training [clean]" />
+      <item itemvalue="HTTP Request.client | #3" />
+      <item itemvalue="HTTP Request.client | #4" />
       <item itemvalue="HTTP Request.client | #1" />
       <item itemvalue="HTTP Request.client | #2" />
-      <item itemvalue="Kotlin.ApplicationKt" />
       <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.client | #2" />
+        <item itemvalue="HTTP Request.client | #4" />
+        <item itemvalue="HTTP Request.client | #3" />
         <item itemvalue="HTTP Request.client | #1" />
-        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Gradle.spring-kotlin-training [clean]" />
-        <item itemvalue="Kotlin.ApplicationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -329,5 +345,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="r" />
     <option name="LAST_COMMIT_MESSAGE" value="r" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/GlobalRestExceptionHandler.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
