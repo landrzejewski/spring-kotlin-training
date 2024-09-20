@@ -22,4 +22,6 @@ spring:
       authentication-database: admin
       auto-index-creation: true
   messages:
-    basename: exceptions
+    basename: exceptions,text
+jwt:
+  secret: sdfbk3js1zcvabfvae

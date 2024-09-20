@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.data.mongodb.core.convert.MongoCustomConversions
 import org.springframework.web.servlet.config.annotation.CorsRegistry
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 import pl.training.payments.application.CardInfoService
 import pl.training.payments.application.CardOperationsService
@@ -32,11 +33,8 @@ class ApplicationConfiguration : WebMvcConfigurer {
     fun customConversions() =
         MongoCustomConversions(listOf(ZonedDateTimeReadConverter(), ZonedDateTimeWriteConverter()))
 
-    override fun addCorsMappings(registry: CorsRegistry) {
-        registry.addMapping("/api/*")
-            .allowedOrigins("http://localhost:8080")
-            .allowedHeaders("*")
-            .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE")
+    override fun addViewControllers(registry: ViewControllerRegistry) {
+        registry.addViewController("login.html").setViewName("login-form")
     }
 
 }
