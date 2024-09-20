@@ -11,6 +11,12 @@ import java.security.Principal
 @RestController
 class UserRestController {
 
+    // @Secured("ROLE_MANAGER")
+    // @RolesAllowed("MANAGER")
+    // @PreAuthorize("#paymentRequestViewModel.value > 10")
+    // @PostAuthorize("returnObject.contains('payment-summary')")
+    // @PreFilter("filterObject.owner == authentication.name")
+    // @PostFilter("filterObject.owner == authentication.name")
     @GetMapping
     fun getCurrentUser(authentication: Authentication, principal: Principal): UserEntity {
         val userAuth = SecurityContextHolder.getContext().authentication
