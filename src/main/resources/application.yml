@@ -22,6 +22,9 @@ spring:
       authentication-database: admin
       auto-index-creation: true
   messages:
-    basename: exceptions,text
-jwt:
-  secret: sdfbk3js1zcvabfvae
+    basename: exceptions
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8100/realms/training

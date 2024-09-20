@@ -40,15 +40,27 @@ Content-Type: application/json
 Authorization: Basic amFuOjEyMw==
 
 ###
-POST http://localhost:8000/api/tokens
-Accept: application/json
-Content-Type: application/json
+//@no-redirect
+//@no-cookie-jar
+POST http://localhost:8100/realms/training/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
 
-{
-  "username": "jan",
-  "password": "123"
-}
+client_id=training-client&grant_type=password&username=jan&password=123
 
 > {%
-    client.global.set('token', response.body.token);
+    client.global.set('token', response.body.access_token);
+    client.global.set('refreshToken', response.body.refresh_token);
+%}
+
+###
+//@no-redirect
+//@no-cookie-jar
+POST http://localhost:8100/realms/training/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=training-client&grant_type=refresh_token&refresh_token={{ refreshToken }}
+
+> {%
+    client.global.set('token', response.body.access_token);
+    client.global.set('refreshToken', response.body.refresh_token);
 %}

@@ -19,3 +19,17 @@ services:
       - MONGO_INITDB_ROOT_DATABASE=payments
     volumes:
       - ./data/mongo:/data/mongo
+  keycloak:
+    image: quay.io/keycloak/keycloak:24.0.2
+    command:
+      - start-dev
+    ports:
+      - "8100:8080"
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      DB_VENDOR: "POSTGRES"
+      DB_ADDR: "postgres"
+      DB_USER: "admin"
+      DB_PASSWORD: "admin"
+      DB_DATABASE: "payments"

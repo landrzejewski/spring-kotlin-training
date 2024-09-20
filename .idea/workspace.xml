@@ -5,23 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/CredentialsDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthentication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthenticationFilter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthenticationProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtPrincipal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtRestController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/TokenDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/GitHubGrantedAuthoritiesMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/KeycloakGrantedAuthoritiesMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/KeycloakJwtGrantedAuthoritiesConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/KeycloakLogoutHandler.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.http" beforeDir="false" afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/SecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/SecurityConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserDetailsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserDetailsService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecurityInitializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecurityInitializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/AuthenticationLoggingFilter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/BasicAuthenticationEntryPoint.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserDetailsService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/RequestUrlAuthorizationManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecurityInitializer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserRestController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/CredentialsDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthentication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthenticationFilter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthenticationProvider.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtPrincipal.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtRestController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/TokenDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/text.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +89,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="05-Spring-Data" />
+        <entry key="$PROJECT_DIR$" value="07-Spring-Security" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,7 +141,7 @@
     "Spring Boot.Application (1).executor": "Run",
     "Spring Boot.Application.executor": "Run",
     "Spring Boot.ApplicationKt.executor": "Run",
-    "git-widget-placeholder": "07-Spring-Security",
+    "git-widget-placeholder": "08-Spring-Security-OAuth2",
     "last_opened_file_path": "C:/Users/admin/Desktop/spring-kotlin-training/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -260,7 +272,7 @@
       <workItem from="1726754802986" duration="1568000" />
       <workItem from="1726768948456" duration="106000" />
       <workItem from="1726769133948" duration="1870000" />
-      <workItem from="1726856587804" duration="2127000" />
+      <workItem from="1726856587804" duration="3263000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <option name="closed" value="true" />
@@ -334,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726855252189</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="r">
+      <option name="closed" value="true" />
+      <created>1726858766829</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726858766829</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
