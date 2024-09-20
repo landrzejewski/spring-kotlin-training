@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/SecurityConfiguration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/AuthenticationLoggingFilter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/BasicAuthenticationEntryPoint.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserDetailsService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/RequestUrlAuthorizationManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserRestController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/text.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.http" beforeDir="false" afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/import._sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecrityInintializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecurityInitializer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726757561571</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="r">
+      <option name="closed" value="true" />
+      <created>1726855252189</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726855252189</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,4 +1,4 @@
 package pl.training.security
 
-class SecrityInintializer {
+class SecurityInitializer {
 }
