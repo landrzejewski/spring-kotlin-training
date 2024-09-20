@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r" />
+    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

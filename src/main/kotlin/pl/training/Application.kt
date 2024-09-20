@@ -12,8 +12,7 @@ import java.time.LocalDate
 import java.util.Currency
 
 @SpringBootApplication
-class Application(private val cardRepository: CardRepository) :
-    ApplicationRunner {
+class Application(private val cardRepository: CardRepository) : ApplicationRunner {
 
     override fun run(args: ApplicationArguments?) {
         // Initialization
