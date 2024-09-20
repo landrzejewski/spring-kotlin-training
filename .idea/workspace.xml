@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/Base.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/Extended.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/MonetaryAmount.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/MonetaryAmountValidator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/ExceptionDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/GlobalRestExceptionHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/LocationUri.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/RestExceptionResponseBuilder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardInfoRestController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestExceptionHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/OperationTypeDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/exceptions.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/exceptions_pl_PL.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.http" beforeDir="false" afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationRequestDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationRequestDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationsRestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardOperationsRestController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/rest/CardRestMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +59,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="05-Spring-Data" />
+        <entry key="$PROJECT_DIR$" value="07-Spring-Security" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,34 +91,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build spring-kotlin-training.executor": "Run",
-    "Gradle.spring-kotlin-training [clean].executor": "Run",
-    "HTTP Request.client | #1.executor": "Run",
-    "HTTP Request.client | #2.executor": "Run",
-    "HTTP Request.client | #3.executor": "Run",
-    "HTTP Request.client | #4.executor": "Run",
-    "Kotlin.ApplicationKt.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application (1).executor": "Run",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "06-Spring-Web-MVC",
-    "last_opened_file_path": "C:/Users/admin/Desktop/spring-kotlin-training/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build spring-kotlin-training.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-kotlin-training [clean].executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #4.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;06-Spring-Web-MVC&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/spring-kotlin-training/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\spring-kotlin-training\src\main\resources" />
@@ -202,6 +178,13 @@
     <configuration name="client | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-kotlin-training.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-kotlin-training.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.payments.Application" />
@@ -237,6 +220,7 @@
       <item itemvalue="HTTP Request.client | #4" />
       <item itemvalue="HTTP Request.client | #1" />
       <item itemvalue="HTTP Request.client | #2" />
+      <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
@@ -336,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726757561571</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="r">
+      <option name="closed" value="true" />
+      <created>1726851675562</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726851675562</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
