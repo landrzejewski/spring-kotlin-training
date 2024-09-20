@@ -28,3 +28,15 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8100/realms/training
+      client:
+        registration:
+          #          github:
+          #            client-id: Ov23liAgsFga5nl04OFc
+          #            client-secret: 5cb532864d1f6db4a8ffd9b0d1f2ce89b5963983
+          keycloak:
+            client-id: training-client
+            scope:
+              - openid
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8100/realms/training
