@@ -13,12 +13,12 @@ import org.springframework.security.core.userdetails.UserDetails
 class UserEntity(
     @Id
     @GeneratedValue
-    private val id: Long? = null,
-    private var username: String,
-    private var password: String,
-    private var enabled: Boolean,
-    private var verified: Boolean,
-    private var roles: String
+    val id: Long? = null,
+    val login: String,
+    var secret: String,
+    val enabled: Boolean,
+    val verified: Boolean,
+    val roles: String
 ) : UserDetails, CredentialsContainer {
 
     override fun getAuthorities() =
@@ -26,9 +26,9 @@ class UserEntity(
             .map { SimpleGrantedAuthority(it.trim()) }
             .toSet()
 
-    override fun getUsername() = username
+    override fun getUsername() = login
 
-    override fun getPassword() = password
+    override fun getPassword() = secret
 
     override fun isEnabled() = enabled
 
@@ -39,7 +39,7 @@ class UserEntity(
     override fun isCredentialsNonExpired() = enabled
 
     override fun eraseCredentials() {
-        password = ""
+        secret = ""
     }
 
     companion object {

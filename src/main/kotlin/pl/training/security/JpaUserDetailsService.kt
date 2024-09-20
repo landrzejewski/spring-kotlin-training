@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service
 class JpaUserDetailsService(private val userRepository: JpaUserRepository) : UserDetailsService {
 
     override fun loadUserByUsername(username: String) =
-        userRepository.findByUsername(username)
+        userRepository.findByLogin(username)
             .orElseThrow { UsernameNotFoundException(username) }
 
 }

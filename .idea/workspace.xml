@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/CredentialsDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthentication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthenticationFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtAuthenticationProvider.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtPrincipal.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtRestController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/JwtService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/jwt/TokenDto.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecrityInintializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecurityInitializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.http" beforeDir="false" afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/SecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/SecurityConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserDetailsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserDetailsService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/JpaUserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecurityInitializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/SecurityInitializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/security/UserEntity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +117,8 @@
     "HTTP Request.client | #2.executor": "Run",
     "HTTP Request.client | #3.executor": "Run",
     "HTTP Request.client | #4.executor": "Run",
+    "HTTP Request.client | #5.executor": "Run",
+    "HTTP Request.client | #6.executor": "Run",
     "Kotlin.ApplicationKt.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -149,38 +166,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ApplicationKt">
-    <configuration name="spring-kotlin-training [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="client | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="client | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="client | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="client | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="client | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="4" requestIdentifier="#4" runType="Run single request">
+    <configuration name="client | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="client | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -222,8 +220,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.spring-kotlin-training [clean]" />
-      <item itemvalue="HTTP Request.client | #3" />
+      <item itemvalue="HTTP Request.client | #5" />
+      <item itemvalue="HTTP Request.client | #6" />
       <item itemvalue="HTTP Request.client | #4" />
       <item itemvalue="HTTP Request.client | #1" />
       <item itemvalue="HTTP Request.client | #2" />
@@ -232,11 +230,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.client | #1" />
         <item itemvalue="HTTP Request.client | #2" />
+        <item itemvalue="HTTP Request.client | #1" />
+        <item itemvalue="HTTP Request.client | #5" />
+        <item itemvalue="HTTP Request.client | #6" />
         <item itemvalue="HTTP Request.client | #4" />
-        <item itemvalue="HTTP Request.client | #3" />
-        <item itemvalue="Gradle.spring-kotlin-training [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +260,7 @@
       <workItem from="1726754802986" duration="1568000" />
       <workItem from="1726768948456" duration="106000" />
       <workItem from="1726769133948" duration="1870000" />
+      <workItem from="1726856587804" duration="2127000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <option name="closed" value="true" />

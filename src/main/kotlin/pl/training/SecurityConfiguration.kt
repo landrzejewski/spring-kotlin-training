@@ -9,10 +9,12 @@ import org.springframework.security.core.userdetails.User
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.web.access.ExceptionTranslationFilter
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher
 import org.springframework.web.cors.CorsConfiguration
 import pl.training.security.AuthenticationLoggingFilter
 import pl.training.security.BasicAuthenticationEntryPoint
+import pl.training.security.jwt.JwtAuthenticationFilter
 
 /*AuthenticationManager authenticationManager // Interfejs/kontrakt dla procesu uwierzytelnienia użytkownika
      ProviderManager providerManager // Podstawowa implementacja AuthenticationManager, deleguje proces uwierzytelnienia do jednego z obiektów AuthenticationProvider
@@ -80,8 +82,9 @@ class SecurityConfiguration {
     @Bean
     fun securityFilterChain(
         http: HttpSecurity, corsConfiguration: CorsConfiguration,
-        /*jwtAuthenticationFilter: JwtAuthenticationFilter*/
+        jwtAuthenticationFilter: JwtAuthenticationFilter
     ) = http
+        .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter::class.java)
         .addFilterBefore(AuthenticationLoggingFilter(), ExceptionTranslationFilter::class.java)
         .csrf { it.ignoringRequestMatchers("/api/**") }
         .cors { it.configurationSource { request -> corsConfiguration } }
@@ -108,7 +111,7 @@ class SecurityConfiguration {
             // .failureHandler(new CustomAuthenticationFailureHandler())
         }
          .logout { it
-             .logoutRequestMatcher(AntPathRequestMatcher ("/logout.html"))
+             .logoutRequestMatcher(AntPathRequestMatcher ("/logout"))
              .logoutSuccessUrl("/login.html")
              .invalidateHttpSession(true)
          }

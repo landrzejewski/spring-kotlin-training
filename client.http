@@ -1,13 +1,15 @@
 GET http://localhost:8000/api/cards
 Accept: application/json
 Content-Type: application/json
-Authorization: Basic amFuOjEyMw==
-#Authorization: bearer {{token}}
+#Authorization: Basic amFuOjEyMw==
+Authorization: bearer {{token}}
 
 ###
 POST http://localhost:8000/api/cards/4237251412344005/operations
 Accept: application/json
 Content-Type: application/json
+#Authorization: Basic amFuOjEyMw==
+Authorization: bearer {{token}}
 
 {
   "operationType": "INFLOW",
@@ -36,4 +38,17 @@ GET http://localhost:8000/api/users/me
 Accept: application/json
 Content-Type: application/json
 Authorization: Basic amFuOjEyMw==
-#Authorization: bearer {{token}}
+
+###
+POST http://localhost:8000/api/tokens
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "jan",
+  "password": "123"
+}
+
+> {%
+    client.global.set('token', response.body.token);
+%}

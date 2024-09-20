@@ -5,6 +5,6 @@ import java.util.Optional
 
 interface JpaUserRepository : CrudRepository<UserEntity, Long> {
 
-    fun findByUsername(username: String): Optional<UserEntity>
+    fun findByLogin(username: String): Optional<UserEntity>
 
 }
