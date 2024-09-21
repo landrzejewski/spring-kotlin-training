@@ -16,7 +16,7 @@ import java.util.logging.Logger
 @Order(100_000)
 class TimerAspect : Ordered {
 
-    private val log: Logger = Logger.getLogger(TimerAspect::class.java.name)
+    private val log = Logger.getLogger(TimerAspect::class.java.name)
 
     @Around("@annotation(timer)")
     @Throws(Throwable::class)
