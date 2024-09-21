@@ -10,7 +10,7 @@ import pl.training.payments.application.output.CardRepository
 import pl.training.payments.application.output.TimeProvider
 
 @Configuration
-class ApplicationConfiguration {
+open class ApplicationConfiguration {
 
     // @Scope("prototype")
     @Bean(name = ["cardOperationsService"], initMethod = "initialize", destroyMethod = "destroy")
