@@ -14,13 +14,13 @@ open class ApplicationConfiguration {
 
     // @Scope("prototype")
     @Bean(name = ["cardOperationsService"], initMethod = "initialize", destroyMethod = "destroy")
-    fun cardOperationsService(
+    open fun cardOperationsService(
         cardRepository: CardRepository,
         @Qualifier("systemTimeProvider") timeProvider: TimeProvider,
         eventPublisher: CardEventPublisher
     ) = CardOperationsService(cardRepository, timeProvider, eventPublisher)
 
     @Bean
-    fun cardInfoService(cardRepository: CardRepository) = CardInfoService(cardRepository)
+    open fun cardInfoService(cardRepository: CardRepository) = CardInfoService(cardRepository)
 
 }
