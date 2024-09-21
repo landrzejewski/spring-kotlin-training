@@ -5,47 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/ApplicationConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/CardViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/input/CardViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/jpa/SpringDataJpaCardRepositoryMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/adapters/output/persistence/mongo/SpringDataMongoCardRepositoryMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardInfoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardInfoService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardOperationsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/CardOperationsService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/input/CardInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/input/CardInfo.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/output/CardRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/application/output/CardRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderItemEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderItemEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderProjection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderProjection.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/OrderSummary.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/OrderSummary.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SearchCriteria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchCriteria.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SearchSpecification.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SearchSpecification.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataExamples.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataExamples.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataJpaOrderRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataJpaOrderRepositoryExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryExtensions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/extras/SpringDataJpaOrderRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/extras/SpringDataJpaOrderRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Adapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Adapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Atomic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Atomic.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/LazyGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/LazyGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Lock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Lock.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Loggable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Loggable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Mapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Mapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/MinLength.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/MinLength.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Retry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Retry.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/annotations/Timer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/annotations/Timer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/Annotations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/Annotations.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/AtomicAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/AtomicAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/CardOperationsLoggingAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/CardOperationsLoggingAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/LockAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/LockAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/MinLengthAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/MinLengthAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/RetryAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/RetryAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/aop/TimerAspect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/aop/TimerAspect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/converters/ZonedDateTimeReadConverter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/converters/ZonedDateTimeReadConverter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/converters/ZonedDateTimeWriteConverter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/converters/ZonedDateTimeWriteConverter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/model/PageSpec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/PageSpec.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/payments/utils/model/ResultPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/ResultPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726745290747</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="r">
+      <option name="closed" value="true" />
+      <created>1726901138718</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726901138718</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
