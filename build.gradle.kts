@@ -19,7 +19,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    implementation("org.springframework.boot:spring-boot-starter-mail")
+    implementation("org.springframework.boot:spring-boot-starter-artemis")
+    implementation("org.springframework.kafka:spring-kafka:3.1.4")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 }
 
