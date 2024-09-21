@@ -5,8 +5,8 @@ import org.springframework.boot.ApplicationRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import pl.training.payments.adapters.input.CardViewModel
-import pl.training.payments.adapters.input.CardViewModel.Companion.CARD_NUMBER
-import pl.training.payments.adapters.input.CardViewModel.Companion.CURRENCY
+import pl.training.payments.adapters.input.TestCardViewModel.Companion.CARD_NUMBER
+import pl.training.payments.adapters.input.TestCardViewModel.Companion.CURRENCY
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
