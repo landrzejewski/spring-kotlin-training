@@ -11,7 +11,7 @@ import java.util.Currency
 
 @Transactional
 @Component
-open class TestViewModel(
+open class TestCardViewModel(
     private val cardOperations: CardOperations,
     private val cardInfo: CardInfo
 ) : CardViewModel{
