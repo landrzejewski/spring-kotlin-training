@@ -27,5 +27,4 @@ fun main() {
         viewModel.getTransactions().forEach { println(it) }
         println("Balance: ${viewModel.getBalance()}")
     }
-
 }
