@@ -34,7 +34,9 @@ class SpringDataJpaCardRepositoryMapper {
             cardEntity.expiration,
             Currency.getInstance(cardEntity.currencyCode)
         )
-        fromJson(cardEntity.transactions).forEach { card.registerTransaction(it) }
+        if (cardEntity.transactions.isNotEmpty()) {
+            fromJson(cardEntity.transactions).forEach { card.registerTransaction(it) }
+        }
         return card
     }
 
@@ -50,7 +52,7 @@ class SpringDataJpaCardRepositoryMapper {
         JSON_MAPPER.writeValueAsString(transactions)
 
     private fun fromJson(json: String) =
-        JSON_MAPPER.readValue(json, object : TypeReference<MutableList<CardTransaction>>() {})
+        JSON_MAPPER.readValue(json, object : TypeReference<List<CardTransaction>>() {})
 
     companion object {
 
