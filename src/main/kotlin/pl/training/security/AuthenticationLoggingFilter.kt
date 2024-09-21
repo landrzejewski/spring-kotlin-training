@@ -9,7 +9,7 @@ import java.util.logging.Logger
 
 class AuthenticationLoggingFilter : OncePerRequestFilter() {
 
-    private val log: Logger = Logger.getLogger(AuthenticationLoggingFilter::class.java.name)
+    private val log = Logger.getLogger(AuthenticationLoggingFilter::class.java.name)
 
     override fun doFilterInternal(
         request: HttpServletRequest,
