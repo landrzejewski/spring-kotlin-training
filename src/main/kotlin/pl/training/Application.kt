@@ -2,8 +2,8 @@ package pl.training
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import pl.training.payments.adapters.input.CardViewModel
-import pl.training.payments.adapters.input.CardViewModel.Companion.CARD_NUMBER
-import pl.training.payments.adapters.input.CardViewModel.Companion.CURRENCY
+import pl.training.payments.adapters.input.TestViewModel.Companion.CARD_NUMBER
+import pl.training.payments.adapters.input.TestViewModel.Companion.CURRENCY
 import pl.training.payments.application.output.CardRepository
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId

@@ -1,31 +1,21 @@
 package pl.training.payments.adapters.input
 
-import org.springframework.stereotype.Component
-import pl.training.payments.application.input.CardInfo
-import pl.training.payments.application.input.CardOperations
-import pl.training.payments.domain.CardNumber
+import pl.training.commons.model.PageSpec
+import pl.training.commons.model.ResultPage
+import pl.training.payments.domain.Card
+import pl.training.payments.domain.CardTransaction
 import pl.training.payments.domain.Money
-import java.util.Currency
 
-@Component
-class CardViewModel(
-    private val cardOperations: CardOperations,
-    private val cardInfo: CardInfo
-) {
+interface CardViewModel {
 
-    fun depositFunds(value: Double) = cardOperations.inflow(CARD_NUMBER, Money(value, CURRENCY))
+    fun depositFunds(value: Double)
 
-    fun pay(value: Double) = cardOperations.payment(CARD_NUMBER, Money(value, CURRENCY))
+    fun pay(value: Double)
 
-    fun getTransactions() = cardInfo.transactions(CARD_NUMBER)
+    fun getTransactions(): List<CardTransaction>
 
-    fun getBalance() = cardInfo.balance(CARD_NUMBER)
+    fun getBalance(): Money
 
-    companion object {
-
-        val CURRENCY: Currency = Currency.getInstance("PLN")
-        val CARD_NUMBER = CardNumber("4237251412344005")
-
-    }
+    fun getCards(pageSpec: PageSpec): ResultPage<Card>
 
 }
