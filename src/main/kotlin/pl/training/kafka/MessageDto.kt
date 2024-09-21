@@ -1,5 +1,9 @@
 package pl.training.kafka
 
-data class MessageDto(
-    val body: String
-)
+class MessageDto {
+
+    var body: String = ""
+
+    override fun toString() = "MessageDto(body=$body)"
+
+}

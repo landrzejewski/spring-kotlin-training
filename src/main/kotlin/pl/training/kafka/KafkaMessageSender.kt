@@ -11,7 +11,7 @@ class KafkaMessageSender(
 ) : ApplicationRunner {
 
     override fun run(args: ApplicationArguments) {
-        kafkaTemplate.send("messages", MessageDto("Hello"))
+        kafkaTemplate.send("messages", MessageDto().apply { body = "Hello" })
     }
 
 }
