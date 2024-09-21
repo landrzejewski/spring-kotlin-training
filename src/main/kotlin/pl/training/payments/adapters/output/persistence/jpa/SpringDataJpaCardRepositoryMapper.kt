@@ -7,13 +7,13 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
+import pl.training.commons.annotations.Mapper
+import pl.training.commons.model.PageSpec
+import pl.training.commons.model.ResultPage
 import pl.training.payments.domain.Card
 import pl.training.payments.domain.CardId
 import pl.training.payments.domain.CardNumber
 import pl.training.payments.domain.CardTransaction
-import pl.training.commons.annotations.Mapper
-import pl.training.commons.model.PageSpec
-import pl.training.commons.model.ResultPage
 import java.util.Currency
 
 @Mapper
@@ -34,7 +34,9 @@ class SpringDataJpaCardRepositoryMapper {
             cardEntity.expiration,
             Currency.getInstance(cardEntity.currencyCode)
         )
-        fromJson(cardEntity.transactions).forEach { card.registerTransaction(it) }
+        if (cardEntity.transactions.isNotEmpty()) {
+            fromJson(cardEntity.transactions).forEach { card.registerTransaction(it) }
+        }
         return card
     }
 
@@ -50,7 +52,7 @@ class SpringDataJpaCardRepositoryMapper {
         JSON_MAPPER.writeValueAsString(transactions)
 
     private fun fromJson(json: String) =
-        JSON_MAPPER.readValue(json, object : TypeReference<MutableList<CardTransaction>>() {})
+        JSON_MAPPER.readValue(json, object : TypeReference<List<CardTransaction>>() {})
 
     companion object {
 
