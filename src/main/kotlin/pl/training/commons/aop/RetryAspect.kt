@@ -11,7 +11,7 @@ import java.util.logging.Logger
 @Component
 class RetryAspect {
 
-    private val log: Logger = Logger.getLogger(RetryAspect::class.java.name)
+    private val log = Logger.getLogger(RetryAspect::class.java.name)
 
     @Around("@annotation(retry)")
     @Throws(Throwable::class)
