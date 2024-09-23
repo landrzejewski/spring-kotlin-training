@@ -23,7 +23,7 @@ object ApplicationConfiguration {
 
     private fun cardOperations(): CardOperations {
         val cardsService = CardOperationsService(cardRepository, timeProvider(), cardEventPublisher)
-        return CardOperationsLoggingProxy(cardsService)
+        return cardsService
     }
 
     private fun cardsInfo(): CardInfo = CardInfoService(cardRepository)
