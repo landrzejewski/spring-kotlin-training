@@ -201,10 +201,6 @@ annotation class Factory
 fun String.removeQuotes() = replace("\"", "").trim()
 // fun removeQuotes(text: String) = (text.replace("\"", "")).trim()
 
-fun test() {
-    "sss".removeQuotes()
-}
-
 val <T> List<T>.lastIndex: Int
     get() = size - 1
 
