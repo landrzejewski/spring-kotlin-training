@@ -131,6 +131,7 @@ data class Order(val id: String, val products: Array<String>) {
 /*data*/ object Origin {
     var x = 0
     var y = 0
+
 }
 
 /*
@@ -195,9 +196,13 @@ annotation class Factory
     Extensions need to be imported separately. For this reason, they can be located in a different package.
     (we can have many extensions with the same name for the same type). Extensions are not virtual, meaning that
     they cannot be redefined in derived classes.
-*/
-fun String.removeQuotes() = replace("\"", "").trim()
-// fun removeQuotes(text: String) = text.removeQuotes().trim()
+*/removeQuotes
+fun String.() = replace("\"", "").trim()
+// fun removeQuotes(text: String) = (text.replace("\"", "")).trim()
+
+fun test() {
+    "sss".removeQuotes()
+}
 
 val <T> List<T>.lastIndex: Int
     get() = size - 1

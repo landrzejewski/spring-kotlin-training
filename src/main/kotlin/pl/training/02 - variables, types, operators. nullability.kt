@@ -12,14 +12,14 @@ package pl.training
     Type	Size (bits)    Min value	Max value
     Byte	8	           -128	        127
     Short	16	           -32768	    32767
-    Int	    32	           -231	        231-1    // default
-    Long	64	           -263	        263-1
+    Int	    32	           -2^31	    2^31-1    // default
+    Long	64	           -2^63	    2^63-1
 
     Type	Size (bits)	   Min value	Max value
     UByte	8	           0	        255
     UShort	16	           0	        65535
-    UInt	32	           0	        232-1
-    ULong	64	           0	        264-1
+    UInt	32	           0	        2^32-1
+    ULong	64	           0	        2^64-1
 
     Type	Size (bits)	   Significant bits	     Exponent bits 	    Decimal digits
     Float	32	           24	                 8	                6-7
