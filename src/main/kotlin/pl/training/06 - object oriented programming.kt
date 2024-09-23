@@ -196,8 +196,9 @@ annotation class Factory
     Extensions need to be imported separately. For this reason, they can be located in a different package.
     (we can have many extensions with the same name for the same type). Extensions are not virtual, meaning that
     they cannot be redefined in derived classes.
-*/removeQuotes
-fun String.() = replace("\"", "").trim()
+*/
+
+fun String.removeQuotes() = replace("\"", "").trim()
 // fun removeQuotes(text: String) = (text.replace("\"", "")).trim()
 
 fun test() {
