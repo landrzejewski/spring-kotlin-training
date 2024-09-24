@@ -19,7 +19,6 @@ class TimerAspect : Ordered {
     private val log = Logger.getLogger(TimerAspect::class.java.name)
 
     @Around("@annotation(timer)")
-    @Throws(Throwable::class)
     fun measure(joinPoint: ProceedingJoinPoint, timer: Timer): Any? {
         val timeUnit = timer.timeUnit
         val startTime = getTime(timeUnit)
