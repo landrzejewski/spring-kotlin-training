@@ -5,7 +5,6 @@ import pl.training.blog.application.output.ArticleRepository
 import pl.training.blog.domain.ArticleCategory
 import pl.training.blog.domain.Tag
 import pl.training.commons.model.PageSpec
-import java.util.Set
 import java.util.UUID
 
 class ArticleSearchService(private val articleRepository: ArticleRepository) : ArticleSearch {

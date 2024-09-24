@@ -6,7 +6,6 @@ import pl.training.blog.application.input.ArticleAuthorActions
 import pl.training.blog.application.input.ArticleSearch
 import pl.training.blog.domain.ArticleCategory.IT
 
-
 fun main() {
     AnnotationConfigApplicationContext(ApplicationConfiguration::class.java).use {
         val authorActions = it.getBean(ArticleAuthorActions::class.java)
