@@ -11,18 +11,18 @@ import pl.training.blog.application.output.ArticleRepository
 
 @ComponentScan
 @Configuration
-open class ApplicationConfiguration {
+class ApplicationConfiguration {
 
     @Bean
-    open fun articleAuthorActions(articleRepository: ArticleRepository) =
+    fun articleAuthorActions(articleRepository: ArticleRepository) =
         ArticleAuthorActionsService(articleRepository)
 
     @Bean
-    open fun articleReaderActions(articleRepository: ArticleRepository, articleEventEmitter: ArticleEventEmitter) =
+    fun articleReaderActions(articleRepository: ArticleRepository, articleEventEmitter: ArticleEventEmitter) =
         ArticleReaderActionsService(articleRepository, articleEventEmitter)
 
     @Bean
-    open fun articleSearch(articleRepository: ArticleRepository) =
+    fun articleSearch(articleRepository: ArticleRepository) =
         ArticleSearchService(articleRepository)
 
 }
