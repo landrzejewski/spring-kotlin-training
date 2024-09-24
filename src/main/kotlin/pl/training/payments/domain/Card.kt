@@ -17,7 +17,7 @@ class Card(
     var balance = Money(ZERO, currency)
         private set
 
-    fun registeredTransactions(): List<CardTransaction> = transactions
+    fun registeredTransactions() = transactions.toList()
 
     private val transactions = mutableListOf<CardTransaction>()
     private val eventListeners = mutableListOf<Consumer<CardTransactionRegistered>>()
