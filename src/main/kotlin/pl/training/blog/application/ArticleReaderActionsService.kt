@@ -6,7 +6,7 @@ import pl.training.blog.application.output.ArticleRepository
 import pl.training.blog.domain.Comment
 import java.util.UUID
 
-class ArticleReaderActionsServie(
+class ArticleReaderActionsService(
     private val articleRepository: ArticleRepository,
     private val eventsEmitter: ArticleEventEmitter
 ) : ArticleReaderActions {
