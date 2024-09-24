@@ -13,7 +13,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock
 class LockAspect {
 
     @Around("@annotation(lock)")
-    fun lock(joinPoint: ProceedingJoinPoint, lock: Lock): Any {
+    fun lock(joinPoint: ProceedingJoinPoint, lock: Lock): Any? {
         val newLock = ReentrantReadWriteLock()
         val targetLock = if (lock.type == WRITE) newLock.writeLock() else newLock.readLock()
         targetLock.lock()
