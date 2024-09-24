@@ -6,14 +6,14 @@ import pl.training.blog.domain.Article
 import pl.training.blog.domain.ArticleUpdate
 import java.util.UUID
 
-class ArticleAuthorActionsServie(private val articleRepository: ArticleRepository) : ArticleAuthorActions {
+class ArticleAuthorActionsService(private val articleRepository: ArticleRepository) : ArticleAuthorActions {
 
-    override fun create(template: ArticleTemplate): UUID {
+    override fun create(articleTemplate: ArticleTemplate): UUID {
         val article = Article(
-            title = template.title,
-            author = template.author,
-            content = template.content,
-            category = template.category
+            title = articleTemplate.title,
+            author = articleTemplate.author,
+            content = articleTemplate.content,
+            category = articleTemplate.category
         )
         return articleRepository.save(article).id
     }
