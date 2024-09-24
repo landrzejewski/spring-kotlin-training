@@ -14,7 +14,6 @@ class RetryAspect {
     private val log = Logger.getLogger(RetryAspect::class.java.name)
 
     @Around("@annotation(retry)")
-    @Throws(Throwable::class)
     fun tryExecute(joinPoint: ProceedingJoinPoint, retry: Retry): Any? {
         var attempt = 0
         var throwable: Throwable
