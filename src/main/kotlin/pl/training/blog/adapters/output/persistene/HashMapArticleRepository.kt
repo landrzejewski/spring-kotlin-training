@@ -6,6 +6,7 @@ import pl.training.blog.application.output.ArticleRepository
 import pl.training.blog.domain.Article
 import pl.training.blog.domain.ArticleCategory
 import pl.training.blog.domain.Tag
+import pl.training.commons.aop.FromCache
 import pl.training.commons.model.PageSpec
 import pl.training.commons.model.ResultPage
 import java.util.*
@@ -15,6 +16,7 @@ class HashMapArticleRepository : ArticleRepository {
 
     private val articles = mutableMapOf<UUID, Article>()
 
+    @FromCache("articlesById", capacity = 10)
     override fun findById(id: UUID) = articles[id]
 
     override fun findByCategory(category: ArticleCategory, pageSpec: PageSpec) =

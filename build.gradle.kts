@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     implementation("org.springframework:spring-context:6.1.13")
+    implementation("org.aspectj:aspectjweaver:1.9.22.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     testImplementation(kotlin("test"))
 }
