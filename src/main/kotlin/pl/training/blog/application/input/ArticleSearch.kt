@@ -6,7 +6,6 @@ import pl.training.blog.application.ArticleView
 import pl.training.blog.domain.Article
 import pl.training.blog.domain.ArticleCategory
 import pl.training.blog.domain.Tag
-import java.util.Set
 import java.util.UUID
 
 interface ArticleSearch {
