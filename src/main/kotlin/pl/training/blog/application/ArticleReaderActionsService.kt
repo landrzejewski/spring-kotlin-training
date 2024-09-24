@@ -20,7 +20,10 @@ class ArticleReaderActionsService(
         articleRepository.apply(articleId) { it.dislike() }
 
     override fun comment(articleId: UUID, comment: Comment) =
-        articleRepository.apply(articleId) { it.addComment(comment) }
+        articleRepository.apply(articleId) {
+            it.addComment(comment)
+            it
+        }
 
     companion object {
 

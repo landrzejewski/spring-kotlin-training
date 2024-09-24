@@ -25,10 +25,9 @@ interface ArticleRepository {
 
     fun existsByTitle(title: String): Boolean
 
-    fun apply(articleId: UUID, operation: (Article) -> Unit) {
+    fun apply(articleId: UUID, operation: (Article) -> Article) {
         val article = findById(articleId) ?: throw ArticleNotFoundException()
-        operation(article)
-        save(article)
+        save(operation(article))
     }
 
 }
