@@ -7,7 +7,6 @@ import pl.training.blog.application.output.ArticleRepository
 import pl.training.blog.domain.Article
 import pl.training.blog.domain.ArticleCategory
 import pl.training.blog.domain.Tag
-import java.util.Set
 import java.util.UUID
 
 class HashMapArticleRepository : ArticleRepository {
