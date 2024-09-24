@@ -16,7 +16,7 @@ class HashMapArticleRepository : ArticleRepository {
 
     private val articles = mutableMapOf<UUID, Article>()
 
-    @FromCache("articlesById", capacity = 10)
+    @FromCache("articlesById")
     override fun findById(id: UUID) = articles[id]
 
     override fun findByCategory(category: ArticleCategory, pageSpec: PageSpec) =
