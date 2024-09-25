@@ -15,7 +15,7 @@ class MonetaryAmountValidator : ConstraintValidator<MonetaryAmount, BigDecimal> 
     override fun isValid(value: BigDecimal, context: ConstraintValidatorContext) =
         try {
             with(value.toDouble()) {
-                this >= 0.0 && this <= maxValue
+                this in 0.0..maxValue
             }
         } catch (_: NumberFormatException) {
             false

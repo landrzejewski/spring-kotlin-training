@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r" />
+    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.http" beforeDir="false" afterPath="$PROJECT_DIR$/client.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/MonetaryAmountValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/commons/model/validation/MonetaryAmountValidator.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +77,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/landrzejewski/spring-kotlin-training&quot;,
-    &quot;accountId&quot;: &quot;f9b50971-c2ca-4758-9c05-146ec4061b6c&quot;
+    &quot;accountId&quot;: &quot;15cb444a-6f85-4881-96ac-77800f25111b&quot;
   }
 }</component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -106,9 +110,11 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Application (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Application (1).executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ApplicationKt.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;06-Spring-Web-MVC&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/spring-kotlin-training/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -143,7 +149,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.ApplicationKt">
     <configuration name="spring-kotlin-training [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -186,8 +192,17 @@
       </method>
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
       <module name="spring-kotlin-training.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.payments.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationKt" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <module name="spring-kotlin-training.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.training.ApplicationKt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,14 +237,15 @@
       <item itemvalue="HTTP Request.client | #2" />
       <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.ApplicationKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.client | #2" />
         <item itemvalue="HTTP Request.client | #4" />
+        <item itemvalue="Gradle.spring-kotlin-training [clean]" />
         <item itemvalue="HTTP Request.client | #3" />
         <item itemvalue="HTTP Request.client | #1" />
-        <item itemvalue="Gradle.spring-kotlin-training [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -255,6 +271,8 @@
       <workItem from="1726754802986" duration="1568000" />
       <workItem from="1726768948456" duration="106000" />
       <workItem from="1726769133948" duration="1870000" />
+      <workItem from="1727261921362" duration="2268000" />
+      <workItem from="1727265114301" duration="3594000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <option name="closed" value="true" />
@@ -339,15 +357,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="r" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/pl/training/commons/web/GlobalRestExceptionHandler.kt</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.fasterxml.jackson.databind.exc.MismatchedInputException" memberName="detailMessage" />
