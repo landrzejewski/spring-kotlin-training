@@ -1,4 +1,4 @@
-package pl.training.blog.adapters.output.persistene
+package pl.training.blog.adapters.output.persistence
 
 import pl.training.commons.model.PageSpec
 import pl.training.commons.model.ResultPage

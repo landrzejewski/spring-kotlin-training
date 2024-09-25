@@ -1,6 +1,6 @@
 package pl.training
 
-import pl.training.blog.adapters.output.persistene.HashMapArticleRepository
+import pl.training.blog.adapters.output.persistence.HashMapArticleRepository
 import pl.training.blog.application.ArticleAuthorActionsService
 import pl.training.blog.application.ArticleSearchService
 import pl.training.blog.application.ArticleTemplate
