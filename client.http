@@ -1,9 +1,9 @@
-POST http://localhost:8000/articles
+POST http://localhost:8080/articles
 Accept: application/json
 Content-Type: application/json
 
 {
-  "title": "Podstawy Spring",
+  "title": "P",
   "author": "Jan Kowalski",
   "category": "IT",
   "content": "..."
@@ -11,13 +11,13 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:8000/articles/f27ce0b6-5b33-4ed7-b38e-dc28a3da4c97
+DELETE http://localhost:8080/articles/c2221f8e-f919-4986-8d94-da8116a80835
 Accept: application/json
 Content-Type: application/json
 
 ###
 
-PATCH http://localhost:8000/articles/f20a7286-bb03-4128-a0db-379580c57a14
+PATCH http://localhost:8080/articles/604466d8-371a-42ee-9604-eb328d9de69c
 Accept: application/json
 Content-Type: application/json
 
@@ -30,18 +30,18 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:8000/articles/published/f20a7286-bb03-4128-a0db-379580c57a14
+PUT http://localhost:8080/articles/published/604466d8-371a-42ee-9604-eb328d9de69c
 Accept: application/json
 Content-Type: application/json
 
 ###
 
-GET http://localhost:8000/articles/f20a7286-bb03-4128-a0db-379580c57a14
+GET http://localhost:8080/articles/604466d8-371a-42ee-9604-eb328d9de69c
 Accept: application/json
 Content-Type: application/json
 
 ###
 
-GET http://localhost:8000/categories/IT/articles?tag=it&tag=java
+GET http://localhost:8080/categories/IT/articles?tag=it&tag=java
 Accept: application/json
 Content-Type: application/js
