@@ -1,4 +1,4 @@
-package pl.training.blog.adapters.output.persistene
+package pl.training.blog.adapters.output.persistence
 
 import org.springframework.stereotype.Repository
 import pl.training.blog.application.ArticleView
