@@ -1,0 +1,47 @@
+POST http://localhost:8000/articles
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Podstawy Spring",
+  "author": "Jan Kowalski",
+  "category": "IT",
+  "content": "..."
+}
+
+###
+
+DELETE http://localhost:8000/articles/f27ce0b6-5b33-4ed7-b38e-dc28a3da4c97
+Accept: application/json
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:8000/articles/f20a7286-bb03-4128-a0db-379580c57a14
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Podstawy Spring",
+  "category": "IT",
+  "content": "...",
+  "tags": ["it", "java"]
+}
+
+###
+
+PUT http://localhost:8000/articles/published/f20a7286-bb03-4128-a0db-379580c57a14
+Accept: application/json
+Content-Type: application/json
+
+###
+
+GET http://localhost:8000/articles/f20a7286-bb03-4128-a0db-379580c57a14
+Accept: application/json
+Content-Type: application/json
+
+###
+
+GET http://localhost:8000/categories/IT/articles?tag=it&tag=java
+Accept: application/json
+Content-Type: application/js
