@@ -1,9 +1,10 @@
 POST http://localhost:8080/articles
 Accept: application/json
 Content-Type: application/json
+Authorization: API_KEY 1234567890
 
 {
-  "title": "P",
+  "title": "Pan",
   "author": "Jan Kowalski",
   "category": "IT",
   "content": "..."
