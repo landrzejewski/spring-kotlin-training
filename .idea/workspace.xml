@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r" />
+    <list default="true" id="9d20eb1a-7be5-40b0-b0d6-233cbfc5d933" name="Changes" comment="r">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pl/training/SecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pl/training/SecurityConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,12 +75,12 @@
     &quot;assignee&quot;: &quot;landrzejewski&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/landrzejewski/spring-kotlin-training",
-    "accountId": "15cb444a-6f85-4881-96ac-77800f25111b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/landrzejewski/spring-kotlin-training&quot;,
+    &quot;accountId&quot;: &quot;15cb444a-6f85-4881-96ac-77800f25111b&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -91,39 +96,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build spring-kotlin-training.executor": "Run",
-    "Gradle.spring-kotlin-training [clean].executor": "Run",
-    "HTTP Request.client | #1.executor": "Run",
-    "HTTP Request.client | #2.executor": "Run",
-    "HTTP Request.client | #3.executor": "Run",
-    "HTTP Request.client | #4.executor": "Run",
-    "HTTP Request.client | #5.executor": "Run",
-    "HTTP Request.client | #6.executor": "Run",
-    "HTTP Request.client | #7.executor": "Run",
-    "Kotlin.ApplicationKt.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application (1).executor": "Run",
-    "Spring Boot.Application.executor": "Run",
-    "Spring Boot.ApplicationKt.executor": "Run",
-    "git-widget-placeholder": "08-Spring-Security-OAuth2",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/admin/Desktop/spring-kotlin-training/src/main/resources/templates",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build spring-kotlin-training.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-kotlin-training [clean].executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #6.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.client | #7.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;08-Spring-Security-OAuth2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/spring-kotlin-training/src/main/resources/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\spring-kotlin-training\src\main\resources\templates" />
@@ -150,13 +155,32 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ApplicationKt">
+    <configuration name="spring-kotlin-training [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="client | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="client | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="client | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="client | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client.http" index="6" requestIdentifier="#6" runType="Run single request">
@@ -204,8 +228,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.spring-kotlin-training [clean]" />
       <item itemvalue="HTTP Request.client | #7" />
-      <item itemvalue="HTTP Request.client | #5" />
       <item itemvalue="HTTP Request.client | #6" />
       <item itemvalue="HTTP Request.client | #1" />
       <item itemvalue="HTTP Request.client | #2" />
@@ -214,11 +238,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.client | #6" />
+        <item itemvalue="Gradle.spring-kotlin-training [clean]" />
         <item itemvalue="HTTP Request.client | #1" />
+        <item itemvalue="HTTP Request.client | #6" />
         <item itemvalue="HTTP Request.client | #7" />
         <item itemvalue="HTTP Request.client | #2" />
-        <item itemvalue="HTTP Request.client | #5" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +269,8 @@
       <workItem from="1726768948456" duration="106000" />
       <workItem from="1726769133948" duration="1870000" />
       <workItem from="1726856587804" duration="3263000" />
-      <workItem from="1727354899714" duration="6000" />
+      <workItem from="1727354899714" duration="3945000" />
+      <workItem from="1727417419537" duration="5123000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <option name="closed" value="true" />
@@ -335,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726860277089</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="r">
+      <option name="closed" value="true" />
+      <created>1727354948509</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727354948509</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
