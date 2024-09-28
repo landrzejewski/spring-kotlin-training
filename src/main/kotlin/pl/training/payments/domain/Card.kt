@@ -42,15 +42,9 @@ class Card(
 
     private fun commit(transaction: CardTransaction) {
         transactions.add(transaction)
-        updateBalance()
-    }
-
-    private fun updateBalance() {
-        balance = transactions.fold(Money(ZERO, currency)) { totalBalance, transaction ->
-            when (transaction.type) {
-                INFLOW -> totalBalance + transaction.money
-                PAYMENT -> totalBalance - transaction.money
-            }
+        balance = when (transaction.type) {
+            INFLOW -> balance + transaction.money
+            PAYMENT -> balance - transaction.money
         }
     }
 
